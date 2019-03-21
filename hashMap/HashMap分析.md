@@ -12,11 +12,19 @@
 - 为了你们方便，我在截图的时候截取了源码的行号，你们可以自行去查看源码对应的位置
 - 数据类型，1.8应该使用的是 `Node` 命名，但是我使用的是 `Entry`，不过逻辑还是1.8的逻辑
 
+
+
+## 本文结构脉络
+
+![](img/Xnip2019-03-21_09-44-21.jpg)
+
+
+
 ## 个人理解语句以及中文注释
 
  存放在我的 github 上：
 
-[https://github.com/leosanqing/StructAndAlgorithm/tree/master/Struct/hashMapDemo]: https://github.com/leosanqing/StructAndAlgorithm/tree/master/Struct/hashMapDemo
+[https://github.com/leosanqing/StructAndAlgorithm/tree/master/Struct/hashMapDemo](https://github.com/leosanqing/StructAndAlgorithm/tree/master/Struct/hashMapDemo)
 
 类似于这种格式
 
@@ -99,7 +107,7 @@ float loadFactor;
 
 #  put元素
 
->  如果你看懂了这个过程，那么基本上 HashMap 就算是理解了
+>  如果你看懂了这个过程，那么基本上 HashMap 的主要逻辑就算是基本理解了
 
 ## 步骤
 
@@ -665,7 +673,7 @@ if(oldTab != null){
 
 不过阅读前，我觉得得了解这些前提，
 
-1.  **数组table的长度绝对是2的n次方(一定是)。**至于为啥你可以参考后面的问题索引"创建函数时，传入初始长度0,1,2,3,4……15,16，数组table长度为多少"
+1.  **数组table的长度绝对是2的n次方(一定是)。**至于为啥你可以参考另一篇文章"table长度到底是多少"
 
    知道这个前提，那么你就知道在数组的长度中，只有最高位是1，其他全为0；
 
