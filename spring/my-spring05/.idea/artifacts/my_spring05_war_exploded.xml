@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="my-spring05:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/my_spring05_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="my-spring05" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="my-spring05/web/Web" />
+    </root>
+  </artifact>
+</component>

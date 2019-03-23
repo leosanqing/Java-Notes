@@ -1,10 +1,9 @@
 package com.swu.leosanqing.servlet;
 
-import com.swu.leosanqing.annotation.MyAutowired;
-import com.swu.leosanqing.annotation.MyController;
-import com.swu.leosanqing.annotation.MyRequestMapping;
-import com.swu.leosanqing.annotation.MyService;
+import com.swu.leosanqing.annotation.*;
+import com.swu.leosanqing.controller.PersonController;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -15,6 +14,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.Map;
 public class DispatcherServlet extends HttpServlet {
     List<String> classNames = new ArrayList<String>();
 
-    //
+    //用来存放 实例的映射
     Map<String,Object> beans = new HashMap<String, Object>();
 
     // 存放路径映射
@@ -36,9 +36,10 @@ public class DispatcherServlet extends HttpServlet {
      * @throws ServletException
      */
     @Override
-    public void init() throws ServletException {
+    public void init(ServletConfig config) throws ServletException {
 
         //1.扫描
+        //  这里的路径写死了，本来是通过配置文件加载的，不过这个不重要
         basePackageScan("com.swu");
 
         //2.实例化
@@ -85,8 +86,13 @@ public class DispatcherServlet extends HttpServlet {
         }
     }
 
+
+    /**
+     *  属性注入
+     */
+
     private void doAutowired() {
-        for (Map.Entry<String,Object> entry : beans.entrySet()){
+         for (Map.Entry<String,Object> entry : beans.entrySet()){
 
             //得到实例对象
             Object instance = entry.getValue();
@@ -94,7 +100,7 @@ public class DispatcherServlet extends HttpServlet {
 
             // 找到控制类，因为只有控制类中有 Autowired
             if (clazz.isAnnotationPresent(MyController.class)){
-                // 获取成员变量
+                // 获取所有成员变量
                 Field[] fields = clazz.getDeclaredFields();
 
                 for (Field field :fields){
@@ -127,17 +133,23 @@ public class DispatcherServlet extends HttpServlet {
      * 实例化
      */
     private void doInstance() {
+
         for (String className : classNames){
             // 获取到类名
             String cn = className.replace(".class", "");
 
-            //利用反射
             try {
+                //利用反射,搞到他的字节码
+
                 Class<?> clazz = Class.forName(cn);
                 // 说明是控制类
                 if(clazz.isAnnotationPresent(MyController.class)){
                     // 创建实例对象
                     Object instance = clazz.newInstance();
+
+                    //因为他要存放进 map中，value 就是上面的实例对象，
+                    // key 在本次中是使用注解的 value（但是在spring中，他是用的是类名小写作为key）
+
                     // 获取到 MyRequestMapping 注解
                     MyRequestMapping mapping =  clazz.getAnnotation(MyRequestMapping.class);
                     // 把传入的 value 作为 key
@@ -171,29 +183,33 @@ public class DispatcherServlet extends HttpServlet {
     private void basePackageScan(String basePackage) { // basePackage == "com.swu"
 
 
+        // 拿到类路径
+        URL url = this.getClass().getClassLoader().getResource("/" + basePackage.replaceAll("\\.", "/"));
 
-        //扫描编译好的类路径
-        URL url = this.getClass().getClassLoader().getResource("/"+basePackage.replace("\\.","/"));
-        // 获取 "com.swu"下的所有文件
+        // 把路径对象转为字符串
         String fileStr = url.getFile();
 
-        // 将文件路径名转为文件格式
+        // 将文件路径名转为文件对象
         File  file=new File(fileStr);
-        // 文件 下的所有文件名
+        // 拿到文件对象 下的所有文件名
         String[] filesStr = file.list();
 
         for(String path : filesStr){
             // 文件全路径 fileStr+path 获取到文件
             File filePath = new File(fileStr+path);
-            if(file.isDirectory()){
-                basePackageScan(basePackage +"."+ path);
+
+            // 判断是否为文件夹
+            if(filePath.isDirectory()){
+                // 如果是文件夹，递归
+                basePackageScan((basePackage +"."+ path));
             }else {
 
                 // 得到的是类似于 com.swu.leosanqing.person.class 这种格式
 
                 //将文件的绝对路径加入 list
-                classNames.add(basePackage+"."+filePath);
+                classNames.add(basePackage + "." + filePath.getName());
             }
+
         }
     }
 
@@ -209,9 +225,17 @@ public class DispatcherServlet extends HttpServlet {
         String  path = uri.replace(context,"");
 
         Method method = (Method) handlerMap.get(path);
-        MyController instance = (MyController) beans.get("/" + path.split("/")[1]);
+        PersonController instance = (PersonController) beans.get("/" + path.split("/")[1]);
 
-        method.invoke(instance,args);
+
+        Object[] args = hand(req,resp,method);
+        try {
+            method.invoke(instance,args);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -235,10 +259,22 @@ public class DispatcherServlet extends HttpServlet {
                 args[args_i ++] = response;
             }
 
-            Annotation[] paramAns = 
+            Annotation[] paramAns = method.getParameterAnnotations()[index];
+            if (paramAns.length > 0){
+                for (Annotation paramAn :
+                        paramAns ) {
+                    if (MyRequestParam.class.isAssignableFrom(paramAn.getClass())){
+                        MyRequestParam rm = (MyRequestParam) paramAn;
+                        args[args_i++] = request.getParameter(rm.value());
+                    }
+                    
+                }
+            }
+            index++;
         }
 
 
+        return args;
     }
 
 

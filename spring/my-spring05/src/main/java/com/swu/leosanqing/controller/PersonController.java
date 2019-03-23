@@ -16,7 +16,7 @@ import java.io.PrintWriter;
 @MyController
 @MyRequestMapping("/person")
 public class PersonController {
-    @MyAutowired("personServiceImpl")
+    @MyAutowired("PersonServiceImpl")
     private PersonService personService;
 
     @MyRequestMapping("/query")
