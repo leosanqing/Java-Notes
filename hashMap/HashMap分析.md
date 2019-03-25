@@ -673,7 +673,7 @@ if(oldTab != null){
 
 不过阅读前，我觉得得了解这些前提，
 
-1.  **数组table的长度绝对是2的n次方(一定是)。**至于为啥你可以参考另一篇文章"table长度到底是多少"
+1. **数组table的长度绝对是2的n次方(一定是)。**至于为啥你可以参考另一篇文章"table长度到底是多少"[https://github.com/leosanqing/Java-Notes/blob/master/hashMap/table%E9%95%BF%E5%BA%A6%E5%88%B0%E5%BA%95%E6%98%AF%E5%A4%9A%E5%B0%91.md](https://github.com/leosanqing/Java-Notes/blob/master/hashMap/table%E9%95%BF%E5%BA%A6%E5%88%B0%E5%BA%95%E6%98%AF%E5%A4%9A%E5%B0%91.md)
 
    知道这个前提，那么你就知道在数组的长度中，只有最高位是1，其他全为0；
 
