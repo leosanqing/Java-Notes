@@ -1,22 +1,19 @@
-##  创建函数时，传入初始长度0,1,2,3,4……15,16，数组table长度为多少
-
+# 创建函数时，传入初始长度0,1,2,3,4……15,16，数组table长度为多少
 
 
 记住一点，当table进行初始化的时候，table.length 就是  `比传入的值大的或者等于的最小的 2的n次方`，**table.length 的长度一直是 2的n次方**
 
 也就是说，我`new HashMap(0)`,table初始化后 table.length ==1(当然，源码中所有的变量都采用延迟初始化，只有等到用的时候，即put元素的时候才初始化。如果没有放入元素，那么 table一直为 null，我上面的只是另外一个变量 `threshold`得出来的，因为这两个有关系。我使用断点调试一下就知道了)
 
-![1](img/Xnip2019-03-16_15-36-08.jpg)
-
+![](http://pop6dm5xh.bkt.clouddn.com/Fj_AU1fXBX_fzB_JjnsYOSCPrd7c)
 
 
 我们注意到，当构建函数时，threshold的初始值和 `tableSizeFor()`这个函数有关
 
-![](img/Xnip2019-03-16_15-37-19.jpg)
-
+![](http://pop6dm5xh.bkt.clouddn.com/FjjUehP1GKw8xEW4GnBCVK56cLQP)
 我们再进入`tableSizeFor`
 
-![](img/Xnip2019-03-16_15-38-57.jpg)
+![](http://pop6dm5xh.bkt.clouddn.com/FmeOpdxzV_dbiyZLzccXR7NWOObf)
 
 这个是返回一个比输入值大的或者等于的最小的 2的n次方(如果你不明白可以看下我后面的测试值和这篇文章
 
@@ -26,7 +23,7 @@
 
 然后这个时候假如我们第一次 put一个元素，这个时候table数组就要开始初始化了，他就会执行这个`resize`函数，在源码中是这样![](img/Xnip2019-03-16_22-32-16.jpg)
 
-而resize的解读如下
+而`resize`的解读如下
 
 ```java
 /**
@@ -173,3 +170,4 @@
 **table的扩容全部都是乘以 2（左移一位），而且table.length也一直等于2的n次方，即(table.length &(table.length-1)) == 0**
 
 > 之后同理可以推，一开始创建对象时，传入 1的话，table 初始化长度为1；传入 2，长度为2；传入3，长度为4；传入[5,8]，长度为8；传入[9,16]，长度为16
+
