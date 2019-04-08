@@ -1,5 +1,11 @@
 # Java-Notes
-java学习笔记，内容包括JVM，spring，hashMap实现源码分析，剑指offer题解。
+Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。
+
+目前只更新了 HashMap 和JVM的部分内容 ，我会一到两天更新一次。
+
+如果觉得可以，请点个 star 关注哦，谢谢各位大兄弟，小姐姐。
+
+**你们的支持是我写作的动力！**
 
 
 
