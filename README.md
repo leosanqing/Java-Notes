@@ -1,5 +1,5 @@
 # Java-Notes
-Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。
+Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
 
 目前只更新了 HashMap 和JVM的部分内容 ，我会一到两天更新一次。
 
@@ -7,9 +7,25 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 **你们的支持是我写作的动力！**
 
+|  联系我  |   面试相关    | JVM    | HashMap源码分析 | spring |
+| :------: | :-----------: | ------ | --------------- | ------ |
+| 设计模式 | 剑指offer题解 | 多线程 |                 |        |
 
 
-## HashMap
+
+# 联系我
+
+如果想了解其他方面的文章，比如对大学生的建议，可以关注我的公众号
+
+![](img/qrcode_for_gh_bcf090f6797b_258 (1).jpg)
+
+如果是有疑问或者建议意见想和我交流，可以添加我的微信，我会尽可能解答
+
+![](img/WechatIMG1.jpeg)
+
+
+
+# HashMap
 
 [hashMap 部分源码注释](https://github.com/leosanqing/StructAndAlgorithm/blob/master/Struct/hashMapDemo/src/MyHashMap.java)
 
@@ -23,13 +39,13 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 
 
-## JVM
+# JVM
 
 [JVM 垃圾回收](https://github.com/leosanqing/Java-Notes/blob/master/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
 
+[Java内存区域与内存模型](https://github.com/leosanqing/Java-Notes/blob/master/JVM/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md)
 
-
-## SpringMVC
+# SpringMVC
 
 [手写的SpringMVC框架](https://github.com/leosanqing/Java-Notes/tree/master/spring/my-spring05)
 
