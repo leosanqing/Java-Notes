@@ -25,7 +25,7 @@ Java 由于JVM自带垃圾回收的机制，所以对于很多初中级的程序
 
 > 如果你知道 JVM运行时数据区，那么应该知道上面的两部分刚好是按照线程共不共享来划分的。这样也方便记
 
-如果不了解的话，可以参考我的这篇 JVM运行时数据区的文章
+如果不了解的话，可以参考我的这篇 [JVM运行时数据区的文章](https://github.com/leosanqing/Java-Notes/blob/master/JVM/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md)
 
 ## 第一部分
 
@@ -43,7 +43,7 @@ Java 由于JVM自带垃圾回收的机制，所以对于很多初中级的程序
 
 在JDK1.7或者1.8之前，很多人将方法区和Hotspot中的`永久代`等同。其实二者也是有区别的`前者是 JVM 的规范，而后者则是 JVM 规范的一种实现`
 
-**注意：**只有 Hotspot中才有永久代（PermGen space）的概念，其他的JVM比如Oracle的JRocket和IBM的J9并没有这个概念。 而且永久代从JDK1.7之后就开始逐步移除了，1.8之后就已经完全移除，转为`元空间`
+**注意**：只有 Hotspot中才有永久代（PermGen space）的概念，其他的JVM比如Oracle的JRocket和IBM的J9并没有这个概念。 而且永久代从JDK1.7之后就开始逐步移除了，1.8之后就已经完全移除，转为`元空间`
 
 具体可以参考这篇博文，[永久代和元空间](https://www.cnblogs.com/paddix/p/5309550.html)
 
