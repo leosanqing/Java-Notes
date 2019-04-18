@@ -5,7 +5,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 如果觉得可以，请点个 star 关注哦，谢谢各位大兄弟，小姐姐。
 
-**你们的支持是我写作的动力！**
+**邀请老哥，小姐姐们一起完成这个repo**
 
 |  联系我  |   面试相关    | JVM    | HashMap源码分析 | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
@@ -43,7 +43,11 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 [JVM 垃圾回收](https://github.com/leosanqing/Java-Notes/blob/master/JVM/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6.md)
 
+[一文了解所有垃圾回收器](https://github.com/leosanqing/Java-Notes/blob/master/JVM/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8.md)
+
 [Java内存区域与内存模型](https://github.com/leosanqing/Java-Notes/blob/master/JVM/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md)
+
+[对象创建](<https://github.com/leosanqing/Java-Notes/blob/master/JVM/%E5%AF%B9%E8%B1%A1%E5%88%9B%E5%BB%BA/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA.md>)
 
 # SpringMVC
 
