@@ -27,7 +27,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 # HashMap
 
-[hashMap 部分源码注释](https://github.com/leosanqing/StructAndAlgorithm/blob/master/Struct/hashMapDemo/src/MyHashMap.java)
+[hashMap 部分源码注释](<https://github.com/leosanqing/Java-Notes/blob/master/Struct/hashMapDemo/src/MyHashMap.java>)
 
 [HashMap-put过程](https://github.com/leosanqing/Java-Notes/blob/master/hashMap/HashMap%E5%88%86%E6%9E%90.md)
 
