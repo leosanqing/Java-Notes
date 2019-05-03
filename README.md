@@ -7,21 +7,17 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
-|  联系我  |   面试相关    | JVM    | HashMap源码分析 | spring |
+|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | JVM    | HashMap源码分析 | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
-| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | 并发编程 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |
+| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | 并发编程 | 联系我 |
+
+# 书籍
+
+书籍主要分为两方面，一个是技术类书籍，一类是非技术类书籍(这个部分我基本都看过觉得不错的)
+
+- 技术类
 
 
-
-# 联系我
-
-如果想了解其他方面的文章，比如对大学生的建议，可以关注我的公众号
-
-![](img/qrcode_for_gh_bcf090f6797b_258.jpg)
-
-如果是有疑问或者建议意见想和我交流，可以添加我的微信，我会尽可能解答
-
-![](img/WechatIMG1.jpeg)
 
 
 
@@ -54,4 +50,12 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 # SpringMVC
 
 [手写的SpringMVC框架](https://github.com/leosanqing/Java-Notes/tree/master/spring/my-spring05)
+# 联系我
 
+如果想了解其他方面的文章，比如对大学生的建议，可以关注我的公众号
+
+![](img/qrcode_for_gh_bcf090f6797b_258.jpg)
+
+如果是有疑问或者建议意见想和我交流，可以添加我的微信，我会尽可能解答
+
+![](img/WechatIMG1.jpeg)
