@@ -15,11 +15,9 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 书籍主要分为两方面，一个是技术类书籍，一类是非技术类书籍(这个部分我基本都看过觉得不错的)
 
-- 技术类
+有的有简介和电子书，可以点击链接跳转
 
-
-
-
+https://github.com/leosanqing/Java-Notes/tree/master/books
 
 # HashMap
 
