@@ -1,4 +1,4 @@
-package easy.array;
+package medium.array;
 
 import java.util.Arrays;
 import java.util.LinkedList;
