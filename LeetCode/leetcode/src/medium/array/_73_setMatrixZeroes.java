@@ -1,4 +1,4 @@
-package easy.array;
+package medium.array;
 
 /**
  * 题目： 给定一个 m x n 的矩阵，如果一个元素为 0，则将其所在行和列的所有元素都设为 0。请使用原地算法。
@@ -19,7 +19,7 @@ package easy.array;
  * 思路： 把矩阵的第一行和第一列作为标志位，如果该行或者该列有0，那么他就置为0
  *       然后再遍历，替换
  */
-class Solution {
+class _73_setMatrixZeroes {
     public void setZeroes(int[][] matrix) {
         if(matrix == null || matrix.length ==0||matrix[0].length==0)
             return;
