@@ -1,4 +1,12 @@
+# 资源链接
+
+非技术部分书籍我已经下载好，百度云
+
+链接:https://pan.baidu.com/s/1xHu3Ved3UWelJQRsI3vkwg  密码:4njy
+
 # 技术类
+
+
 
 ## Java
 
