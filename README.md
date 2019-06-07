@@ -71,8 +71,9 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
 - ## 并发
 
-
 并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
+
+
 
 
 
