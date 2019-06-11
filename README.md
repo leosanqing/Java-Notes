@@ -1,8 +1,4 @@
-# 旅游去了
 
-毕业旅行去了，暂停上10天，毕竟该转换心态了
-
-需要的先看我的JVM专栏。回来就更新spring或者是并发的模块
 
 # 选对专业
 
@@ -24,7 +20,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 |  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM) | [HashMap源码分析](https://github.com/leosanqing/Java-Notes/tree/master/hashMap) | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
-| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | 并发编程 | 联系我 |
+| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming) | 联系我 |
 
 # 书籍
 
@@ -70,6 +66,13 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
   - [运行期优化](https://github.com/leosanqing/Java-Notes/blob/master/JVM/%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E4%B8%8E%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/%E8%BF%90%E8%A1%8C%E6%9C%9F%E4%BC%98%E5%8C%96/%E8%BF%90%E8%A1%8C%E6%9C%9F%E4%BC%98%E5%8C%96.md)
 
 - ## 并发
+
+  - [链接](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)
+
+# 并发
+
+- 基础
+  - [Java内存模型](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/Java%20%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 
 并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
 
