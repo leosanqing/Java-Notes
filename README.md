@@ -67,6 +67,7 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
 - ## 并发
 
+  - 并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
   - [链接](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)
 
 # 并发
@@ -74,7 +75,7 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 - 基础
   - [Java内存模型](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/Java%20%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
 
-并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
+
 
 
 
