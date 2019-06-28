@@ -22,9 +22,9 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
-|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM) | [HashMap源码分析](https://github.com/leosanqing/Java-Notes/tree/master/hashMap) | spring |
+|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [HashMap源码分析](https://github.com/leosanqing/Java-Notes/tree/master/hashMap) | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
-| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming) | 联系我 |
+| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 联系我 |
 
 # 书籍
 
