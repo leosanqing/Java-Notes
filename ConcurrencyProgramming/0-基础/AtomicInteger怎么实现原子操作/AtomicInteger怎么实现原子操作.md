@@ -126,6 +126,16 @@ public class VolatileDemo {
 
 尝试使用CAS操作来设置这个值，如果成功返回true，失败返回false，并且一直进入循环
 
+
+
+# JDK1.7
+
+但是在JDK1.7的时候，这个实现就不是这样的
+
+![](img/Xnip2019-07-14_09-02-34.jpg)
+
+他这个就是单独写的，如果一直没有更新成功就一直循环CAS操作
+
 # 总结
 
 所以CAS是这个AtomicInteger类保证原子的一个重要操作，如果不了解CAS，可以看我的这篇文章，[悲观锁和乐观锁都是啥玩意](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81/%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81.md)
