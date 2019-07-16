@@ -19,9 +19,9 @@ public class BookShelfIterator implements Iterator{
 
     @Override
     public Object next() {
-        for (int i = 0; i < bookShelf.getLength(); i++) {
-            
-        }
-        return null;
+        Book book = bookShelf.getBookAt(index);
+        index++;
+
+        return book;
     }
 }

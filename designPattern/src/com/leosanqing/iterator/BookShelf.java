@@ -3,6 +3,9 @@ package com.leosanqing.iterator;
 public class BookShelf implements Aggregate{
     public Book[] books;
     public int last = 0;
+    public BookShelf(int maxsize){
+         this.books = new Book[maxsize];
+    }
 
     public void appendBook(Book book){
         this.books[last] = book;
@@ -14,7 +17,7 @@ public class BookShelf implements Aggregate{
     }
     @Override
     public Iterator iterator() {
-        return null;
+        return new BookShelfIterator(this);
     }
 
     public int getLength() {
