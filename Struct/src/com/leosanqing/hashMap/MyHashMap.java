@@ -1,3 +1,5 @@
+package com.leosanqing.hashMap;
+
 import java.util.Map;
 import java.util.Objects;
 
