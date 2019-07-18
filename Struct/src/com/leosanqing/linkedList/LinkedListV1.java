@@ -2,19 +2,19 @@ package com.leosanqing.linkedList;
 
 
 /**
- *  LinkedList 1.0 version
+ *  LinkedListV1 1.0 version
  *
  *  只实现最最基础的功能,能进行增删改查操作
  */
 
-public class LinkedList {
+public class LinkedListV1 {
     private Node first;
     private Node last;
     // 临时变量
     private Node p;
     private int size;
 
-    public LinkedList(){
+    public LinkedListV1(){
         first = new Node();
         last = first;
         size = 0;
