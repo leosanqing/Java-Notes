@@ -98,6 +98,16 @@ public class LinkedListV1 {
     }
 
     /**
+     * 给定索引，获取节点的数据
+     * @param index
+     * @return
+     */
+    public Object get(int index){
+        checkElemIndex(index);
+        return node(index).data;
+    }
+
+    /**
      * 检查是否为正确的索引，如果是，返回true；否则返回false
      * @param index
      * @return

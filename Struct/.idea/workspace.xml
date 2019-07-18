@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leosanqing/hashMap/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="133">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#96#97#0" expanded="true" />
@@ -37,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leosanqing/linkedList/LinkedListV1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+            <state relative-caret-position="573">
+              <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
               <folding>
                 <element signature="method#LinkedList#0;class#LinkedList#0" />
                 <element signature="class#Node#0;class#LinkedList#0" />
@@ -67,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="255" column="21" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="21" />
+            <state relative-caret-position="468">
+              <caret line="194" column="16" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="16" />
               <folding>
                 <element signature="e#6283#6284#0" expanded="true" />
                 <element signature="e#6351#6352#0" expanded="true" />
@@ -83,11 +83,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="282" column="43" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leosanqing/arrayList/ArrayListV1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="285">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#882#883#0" expanded="true" />
                 <element signature="e#930#931#0" expanded="true" />
@@ -95,9 +104,9 @@
                 <element signature="e#982#983#0" expanded="true" />
                 <element signature="e#1015#1016#0" expanded="true" />
                 <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#2401#2402#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1423#1424#0" expanded="true" />
+                <element signature="e#2483#2484#0" expanded="true" />
                 <element signature="e#4671#4672#0" expanded="true" />
                 <element signature="e#4741#4742#0" expanded="true" />
               </folding>
@@ -135,7 +144,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16">
+            <state relative-caret-position="7246">
               <caret line="474" column="16" selection-start-line="474" selection-start-column="13" selection-end-line="474" selection-end-column="16" />
               <folding>
                 <element signature="e#15878#15879#0" expanded="true" />
@@ -156,10 +165,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>remove</find>
-      <find>get</find>
       <find>add</find>
       <find>grow</find>
+      <find>remove</find>
+      <find>modCount</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -169,9 +179,9 @@
         <option value="$PROJECT_DIR$/src/com/leosanqing/hashMap/Test.java" />
         <option value="$PROJECT_DIR$/src/com/leosanqing/hashMap/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/leosanqing/linkedList/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/com/leosanqing/linkedList/LinkedListV1.java" />
         <option value="$PROJECT_DIR$/src/com/leosanqing/arrayList/indexOutOfBoundsException.java" />
         <option value="$PROJECT_DIR$/src/com/leosanqing/arrayList/ArrayListV1.java" />
+        <option value="$PROJECT_DIR$/src/com/leosanqing/linkedList/LinkedListV1.java" />
       </list>
     </option>
   </component>
@@ -224,6 +234,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="leosanqing" type="462c0819:PsiDirectoryNode" />
               <item name="arrayList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Struct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Struct" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leosanqing" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedList" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,12 +317,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563288877692</updated>
-      <workItem from="1563288886151" duration="14526000" />
+      <workItem from="1563288886151" duration="18246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14526000" />
+    <option name="totallyTimeSpent" value="18246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -347,32 +364,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/leosanqing/hashMap/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#96#97#0" expanded="true" />
-            <element signature="e#134#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leosanqing/hashMap/MyHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="474" column="16" selection-start-line="474" selection-start-column="13" selection-end-line="474" selection-end-column="16" />
-          <folding>
-            <element signature="e#15878#15879#0" expanded="true" />
-            <element signature="e#15927#15928#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -411,10 +406,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="282" column="43" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="194" column="16" selection-start-line="194" selection-start-column="8" selection-end-line="194" selection-end-column="16" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6351#6352#0" expanded="true" />
+            <element signature="e#10361#10362#0" expanded="true" />
+            <element signature="e#10388#10389#0" expanded="true" />
+            <element signature="e#11079#11080#0" expanded="true" />
+            <element signature="e#11117#11118#0" expanded="true" />
+            <element signature="e#15586#15587#0" expanded="true" />
+            <element signature="e#15631#15632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leosanqing/arrayList/ArrayListV1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1423#1424#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4741#4742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leosanqing/hashMap/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#96#97#0" expanded="true" />
+            <element signature="e#134#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7246">
+          <caret line="474" column="16" selection-start-line="474" selection-start-column="13" selection-end-line="474" selection-end-column="16" />
+          <folding>
+            <element signature="e#15878#15879#0" expanded="true" />
+            <element signature="e#15927#15928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/leosanqing/linkedList/LinkedListV1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+        <state relative-caret-position="573">
+          <caret line="100" column="12" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="12" />
           <folding>
             <element signature="method#LinkedList#0;class#LinkedList#0" />
             <element signature="class#Node#0;class#LinkedList#0" />
@@ -432,43 +493,6 @@
             <element signature="e#1968#1969#0" expanded="true" />
             <element signature="e#2099#2100#0" expanded="true" />
             <element signature="e#2160#2161#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="255" column="21" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="21" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-            <element signature="e#10361#10362#0" expanded="true" />
-            <element signature="e#10388#10389#0" expanded="true" />
-            <element signature="e#11079#11080#0" expanded="true" />
-            <element signature="e#11117#11118#0" expanded="true" />
-            <element signature="e#15586#15587#0" expanded="true" />
-            <element signature="e#15631#15632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leosanqing/arrayList/ArrayListV1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#4671#4672#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
