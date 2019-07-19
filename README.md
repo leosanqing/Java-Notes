@@ -36,7 +36,15 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 https://github.com/leosanqing/Java-Notes/tree/master/books
 
-# HashMap
+
+
+# 数据结构
+
+链接：https://github.com/leosanqing/Java-Notes/tree/master/Struct
+
+可以下载那个文件夹，里面有实现的数据结构
+
+## HashMap
 
 - [hashMap 部分源码注释](<https://github.com/leosanqing/Java-Notes/blob/master/Struct/hashMapDemo/src/MyHashMap.java>)
 
@@ -47,6 +55,8 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 - [为啥HashMap的长度一定是2的n次方](https://github.com/leosanqing/Java-Notes/blob/master/hashMap/%E4%B8%BA%E5%95%A5HashMap%E7%9A%84%E9%95%BF%E5%BA%A6%E4%B8%80%E5%AE%9A%E6%98%AF2%E7%9A%84n%E6%AC%A1%E6%96%B9.md)
 
 # JVM(基本更完)
+
+链接：https://github.com/leosanqing/Java-Notes/tree/master/JVM
 
 - ## 自动内存管理
 
@@ -75,6 +85,8 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
   - [链接](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)
 
 # 并发
+
+链接：https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming
 
 - 0-基础
   - [Java内存模型](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/Java%20%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/Java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.md)
