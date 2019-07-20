@@ -1,18 +1,12 @@
 
 
-# 选对专业
 
-选到计算机互联网行业，真的太爽了，现在还没有完全饱和，可能2-3年后就没那么吃香了。
-
-对比别的专业，我们真的好到不能再好了。
-
-后期说下怎么选专业，再对比下我同学。
-
-穷IT，富金融
-
- 
 
 # 写在前面
+
+码字不易，点个star吧。尤其是自从我入职后，最近这些都是我起早贪黑写的。**早上6点多起来，晚上12点多睡**，你们看我提交的时间不是早上7点多就是晚上11点多。
+
+
 
 Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
 
@@ -25,6 +19,16 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 |  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [HashMap源码分析](https://github.com/leosanqing/Java-Notes/tree/master/hashMap) | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
 | 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 联系我 |
+
+# 选对专业
+
+选到计算机互联网行业，真的太爽了，现在还没有完全饱和，可能2-3年后就没那么吃香了。
+
+对比别的专业，我们真的好到不能再好了。
+
+后期说下怎么选专业，再对比下我同学。
+
+穷IT，富金融
 
 # 书籍
 
@@ -93,8 +97,6 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
   - [轻量级锁、重量级锁是啥玩意儿](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/%E9%94%81%E5%AF%B9%E6%AF%94/%E9%94%81%E5%AF%B9%E6%AF%94.md)
   - [悲观锁和乐观锁](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81/%E6%82%B2%E8%A7%82%E9%94%81%E5%92%8C%E4%B9%90%E8%A7%82%E9%94%81.md)
   - [线程实现](https://github.com/leosanqing/Java-Notes/blob/master/ConcurrencyProgramming/0-%E5%9F%BA%E7%A1%80/%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0/%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0.md)
-
-
 
 
 
