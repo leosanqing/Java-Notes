@@ -16,9 +16,9 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
-|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [HashMap源码分析](https://github.com/leosanqing/Java-Notes/tree/master/hashMap) | spring |
+|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | 源码区 | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
-| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 联系我 |
+| 设计模式 | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 数据结构 |
 
 # 选对专业
 
@@ -105,11 +105,10 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 # SpringMVC
 
 [手写的SpringMVC框架](https://github.com/leosanqing/Java-Notes/tree/master/spring/my-spring05)
+
+[单例和多例的区别](https://github.com/leosanqing/Java-Notes/blob/master/spring/spring%E4%B8%AD%E5%8D%95%E4%BE%8B%E5%92%8C%E5%A4%9A%E4%BE%8B%E7%9A%84%E5%8C%BA%E5%88%AB/spring%E4%B8%AD%E5%8D%95%E4%BE%8B%E5%92%8C%E5%A4%9A%E4%BE%8B%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+
 # 联系我
-
-如果想了解其他方面的文章，比如对大学生的建议，可以关注我的公众号
-
-![](img/qrcode_for_gh_bcf090f6797b_258.jpg)
 
 如果是有疑问或者建议意见想和我交流，可以添加我的微信，我会尽可能解答
 
