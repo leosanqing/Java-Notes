@@ -1,10 +1,9 @@
 package com.leosanqing.iterator.vectorImp;
 
-import com.leosanqing.iterator.Book;
-import com.leosanqing.iterator.Iterator;
+import com.leosanqing.iterator.ordinary.Iterator;
 
-public class BookShelfIteratorVec implements Iterator{
-    private BookShelf bookShelfVec;
+public class BookShelfIteratorVec<T> implements Iterator{
+    private BookShelf<T> bookShelfVec;
     private int index;
     public BookShelfIteratorVec(BookShelf bookShelf){
         this.bookShelfVec = bookShelf ;
@@ -21,8 +20,8 @@ public class BookShelfIteratorVec implements Iterator{
     }
 
     @Override
-    public Object next() {
-        Book book = bookShelfVec.getBookAt(index);
+    public T next() {
+        T book = bookShelfVec.getBookAt(index);
         index++;
 
         return book;

@@ -1,4 +1,4 @@
-package com.leosanqing.iterator;
+package com.leosanqing.iterator.ordinary;
 
 
 public class Book {

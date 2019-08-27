@@ -1,34 +1,32 @@
 package com.leosanqing.iterator.vectorImp;
 
-import com.leosanqing.iterator.Aggregate;
-import com.leosanqing.iterator.Book;
-import com.leosanqing.iterator.Iterator;
+import com.leosanqing.iterator.ordinary.Aggregate;
+import com.leosanqing.iterator.ordinary.Iterator;
 
 import java.util.Vector;
 
 /**
- * 将数组改成 vector，其他不更改，代码仍然可以运行
+ * 将数组改成 vector，其他不更改，代码仍然可以运行，并且使用泛型
  */
-public class BookShelf implements Aggregate {
-    public Vector<Book> books;
-    private int last = 0;
+public class BookShelf<T> implements Aggregate {
+    public Vector<T> books;
+
 
     public BookShelf(int maxsize){
         books = new Vector<>(maxsize);
     }
 
 
-    public Book getBookAt(int index){
+    public T getBookAt(int index){
         return books.elementAt(index);
     }
 
-    public void appendBook(Book book){
-        books.add(last,book);
-        last++;
+    public void appendBook(T book){
+        books.add(book);
     }
 
     public int getLength(){
-        return last;
+        return books.size();
     }
 
     @Override

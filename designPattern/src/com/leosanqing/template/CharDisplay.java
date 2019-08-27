@@ -1,10 +1,12 @@
 package com.leosanqing.template;
 
-public class CharDisplay extends AbstractDisplay  {
-    char ch ;
-    public  CharDisplay(char ch){
+public class CharDisplay extends AbstractDisplay {
+    char ch;
+
+    public CharDisplay(char ch) {
         this.ch = ch;
     }
+
     @Override
     public void open() {
         System.out.print("<<");

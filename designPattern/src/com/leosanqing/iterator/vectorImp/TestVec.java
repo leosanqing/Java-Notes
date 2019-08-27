@@ -1,7 +1,7 @@
 package com.leosanqing.iterator.vectorImp;
 
-import com.leosanqing.iterator.Book;
-import com.leosanqing.iterator.Iterator;
+import com.leosanqing.iterator.ordinary.Book;
+import com.leosanqing.iterator.ordinary.Iterator;
 
 public class TestVec {
     public static void main(String[] args) {

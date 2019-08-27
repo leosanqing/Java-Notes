@@ -5,6 +5,6 @@ package com.leosanqing.prototype.framework;
  * @Date: 2019-08-02 07:03
  */
 public interface Product extends Cloneable{
-    public void use(String s);
-    public Product createClone();
+    void use(String s);
+    Product createClone();
 }

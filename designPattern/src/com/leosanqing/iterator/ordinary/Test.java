@@ -1,4 +1,4 @@
-package com.leosanqing.iterator;
+package com.leosanqing.iterator.ordinary;
 
 import com.leosanqing.iterator.vectorImp.BookShelf;
 
@@ -10,9 +10,9 @@ public class Test {
         bookShelf.appendBook(new Book("Head First Java"));
         bookShelf.appendBook(new Book("Design Pattern"));
 
-        Iterator iterator = bookShelf.iterator();
+        Iterator<Book> iterator = bookShelf.iterator();
         while (iterator.hasNext()){
-            Book next = (Book) iterator.next();
+            Book next = iterator.next();
             System.out.println(next.getName());
         }
     }

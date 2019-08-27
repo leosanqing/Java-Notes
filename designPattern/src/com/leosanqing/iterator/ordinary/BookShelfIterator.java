@@ -1,6 +1,6 @@
-package com.leosanqing.iterator;
+package com.leosanqing.iterator.ordinary;
 
-public class BookShelfIterator implements Iterator{
+public class BookShelfIterator<T> implements Iterator{
     private BookShelf bookShelf;
     private int index;
     public BookShelfIterator(BookShelf bookShelf){
