@@ -1,7 +1,7 @@
 package com.leosanqing.template;
 
 public class CharDisplay extends AbstractDisplay {
-    char ch;
+    private char ch;
 
     public CharDisplay(char ch) {
         this.ch = ch;
