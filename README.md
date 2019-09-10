@@ -6,9 +6,9 @@
 
 
 
-这几天可能不更技术文了，因为我的一个朋友遇到了点事，我要阅读他读过的书籍，了解他为啥会出现这种情况，沿着他的轨迹重新思考下东西
+技术文章停了一个月了，今天开始恢复更新。不是偷懒了。前面有时间都去看别的非技术的书了， 一个月下班和周末时间看的书，晒一下，还是有点成就感的
 
-再说一点，如果你自己或者你有小孩，千万不要在大学前读 **太宰治和三岛由纪夫的任何作品**，还有这些如《百年孤独》《孤独六讲》《过于喧嚣的孤独》，毕竟还没有建立清晰的认知之前，很容易被他们影响，尤其尤其尤其 **别让他在青春期读他们的作品**。不然真的和你内心遥相呼应
+![](img/IMG_20190910_205533.jpg)
 
 --------------
 
@@ -26,7 +26,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 |  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring |
 | :------: | :-----------: | ------ | --------------- | ------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern) | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(在更) | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 # 选对专业
 
