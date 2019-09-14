@@ -1,12 +1,12 @@
 package com.leosanqing.abstractFactory.factory;
 
 import java.io.FileWriter;
-import java.io.Writer;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-08-03 21:40
+ * @Date: 2019-09-14 20:42
  */
 public abstract class Page {
     protected String title;
@@ -17,22 +17,23 @@ public abstract class Page {
         this.title = title;
         this.author = author;
     }
-    public void add(Item item){
+
+    public void add(Item item) {
         content.add(item);
     }
 
-    public void output(){
-        try{
-            String filename = title+".html";
-            FileWriter fileWriter = new FileWriter(filename);
-            fileWriter.write(this.makeHTML());
-            fileWriter.close();
-            System.out.println(filename+"编写完成");
+    public void output() {
+        String filename = title + ".html";
+        try {
+            FileWriter writer = new FileWriter(filename);
+            writer.write(makeHTML());
+            writer.close();
+            System.out.println(filename + "编写完成");
 
-        }catch (Exception e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    protected abstract String makeHTML();
+    public abstract String makeHTML();
 }

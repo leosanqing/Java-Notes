@@ -74,7 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.leosanqing.abstractFactory.tablefactory" />
       <recent name="com.leosanqing.iterator.vectorImp" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.leosanqing.abstractFactory.listfactory" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -196,7 +200,7 @@
       <workItem from="1564214397866" duration="5000" />
       <workItem from="1564669252586" duration="933000" />
       <workItem from="1564700357494" duration="9866000" />
-      <workItem from="1566652077412" duration="12242000" />
+      <workItem from="1566652077412" duration="19555000" />
     </task>
     <servers />
   </component>

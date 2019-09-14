@@ -2,10 +2,13 @@ package com.leosanqing.abstractFactory.factory;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-08-03 20:48
+ * @Date: 2019-09-14 21:01
+ *
+ *  在这里声明工厂的公共方法，
+ *  并且定义根据工厂名获取工厂实例对象的方法
  */
 public abstract class Factory {
-    public static Factory getFactory(String classname) {
+    public static  Factory getFactory(String classname){
         Factory factory = null;
         try {
             factory = (Factory) Class.forName(classname).newInstance();
@@ -19,10 +22,8 @@ public abstract class Factory {
         return factory;
     }
 
+    public abstract Link createLink(String caption,String url);
+    public abstract Tray createTray(String caption);
+    public abstract Page createPage(String title,String author);
 
-    public abstract Link createLink(String caption, String url);
-
-    public abstract Tray createCray(String caption);
-
-    public abstract Page createPage(String title, String author);
 }
