@@ -78,6 +78,9 @@
       <recent name="com.leosanqing.iterator.vectorImp" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.leosanqing.composite" />
+      <recent name="com.leosanqing.strategy" />
+      <recent name="com.leosanqing.bridge" />
       <recent name="com.leosanqing.abstractFactory.listfactory" />
     </key>
   </component>
@@ -93,7 +96,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.bridge.Main" />
+      <module name="designPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.bridge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.composite.Main" />
+      <module name="designPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.composite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leosanqing.builder.Main" />
       <module name="designPattern" />
@@ -107,38 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.template.Test" />
-      <module name="designPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leosanqing.template.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leosanqing.factory.Test" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.leosanqing.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.prototype.Test" />
-      <module name="designPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leosanqing.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test (3)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Test (4)" />
-        <item itemvalue="Application.Test (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +203,7 @@
       <workItem from="1564214397866" duration="5000" />
       <workItem from="1564669252586" duration="933000" />
       <workItem from="1564700357494" duration="9866000" />
-      <workItem from="1566652077412" duration="19555000" />
+      <workItem from="1566652077412" duration="28803000" />
     </task>
     <servers />
   </component>
