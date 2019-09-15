@@ -17,8 +17,7 @@ public class TableTray extends Tray {
         StringBuffer buffer = new StringBuffer();
         buffer.append("<td>");
         buffer.append("<table width=\"100%\" border=\"1\"><tr>");
-        buffer.append("<td bgcolor=\"#cccccc\" align=\"center\"> colspan=\""
-            +tray.size()+"\"><b>" +caption +"</b></td>");
+        buffer.append("<td bgcolor=\"#cccccc\" align=\"center\"> colspan=\"").append(tray.size()).append("\"><b>").append(caption).append("</b></td>");
         buffer.append("</tr>\n");
         buffer.append("<tr>\n");
         for (Item item : tray) {
