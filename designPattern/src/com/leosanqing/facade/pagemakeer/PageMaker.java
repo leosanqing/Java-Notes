@@ -7,6 +7,8 @@ import java.util.Properties;
 /**
  * @Author: leosanqing
  * @Date: 2019-09-16 22:38
+ *
+ * 这里封装我们调用数据库和调用HtmlWriter的逻辑，我们只需要传入两个参数，他就能完成页面的编写
  */
 public class PageMaker {
     private PageMaker() {
