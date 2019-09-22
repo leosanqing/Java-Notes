@@ -6,20 +6,24 @@ import com.leosanqing.factory.framework.Product;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @Author: leosanqing
+ * @Date: 2019-09-22 20:51
+ */
 public class IDCardFactory extends Factory {
-    private List owners = new ArrayList();
+    private List<String> owners = new ArrayList<>();
+
     @Override
-    public Product createProduct(String string) {
-        return new IDCard(string);
+    protected Product createProduct(String owner) {
+        return new IDCard(owner);
     }
 
     @Override
-    public void registerProduct(Product product) {
-
-        owners.add(((IDCard)product).getOwner());
+    protected void registerProduct(Product product) {
+        owners.add(((IDCard) product).getOwner());
     }
 
-    public List getOwners(){
+    public List<String> getOwners() {
         return owners;
     }
 }

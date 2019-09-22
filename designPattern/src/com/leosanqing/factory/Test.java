@@ -1,9 +1,10 @@
 package com.leosanqing.factory;
 
+
 import com.leosanqing.factory.framework.Factory;
 import com.leosanqing.factory.framework.Product;
 import com.leosanqing.factory.idcard.IDCardFactory;
-
+import com.leosanqing.factory.idcard.IDCardFactorySingleton;
 
 /**
  * 我把我自己之前犯得错误写了出来(一开始我没发现，后来才看到)
@@ -12,13 +13,13 @@ import com.leosanqing.factory.idcard.IDCardFactory;
  *
  * 工厂方法不用 new 关键字来生成实例，而是调用生成实例的专用方法，
  * 目的是为了防止 父类和其他具体类耦合
- *
- *
+
  */
 public class Test {
     public static void main(String[] args) {
 
-        Factory factory = new IDCardFactory();
+/*        Factory factory = new IDCardFactory();
+
         Product p1 = factory.create("小明");
         Product p2 = factory.create("小红");
         Product p3 = factory.create("小黑");
@@ -31,5 +32,15 @@ public class Test {
         p2.use();
         p3.use();
 
+        */
+
+        // 使用单例创建工厂
+        Factory factory = IDCardFactorySingleton.getInstance();
+        Product p1 = factory.create("小明");
+        Product p2 = factory.create("小红");
+        Product p3 = factory.create("小黑");
+        p1.use();
+        p2.use();
+        p3.use();
     }
 }

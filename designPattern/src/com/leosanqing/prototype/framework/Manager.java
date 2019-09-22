@@ -20,9 +20,10 @@ import java.util.HashMap;
  *  类名不一定是束缚，但是如果在代码中使用类名，就无法和该类分离开，无法实现复用
  */
 public  class Manager {
-    private HashMap<String, Product> showcase = new HashMap<>();
-    public void register(String s,Product product){
-        showcase.put(s,product);
+    private HashMap<String,Product> showcase = new HashMap<>();
+
+    public void register(String name,Product product){
+        showcase.put(name, product);
     }
 
     public Product create(String protoname){

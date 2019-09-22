@@ -2,17 +2,17 @@ package com.leosanqing.factory.framework;
 
 
 /**
- * 工厂模式中使用了模板模式，但是有更进一步添加了创建实例的方法
+ * @Author: leosanqing
+ * @Date: 2019-09-22 20:30
  */
 public abstract class Factory {
-    public final Product create(String string) {
-        Product product = createProduct(string);
-        registerProduct(product);
-        return product;
+    // 这里使用Template模式
+    public final Product create(String owner){
+        Product p = createProduct(owner);
+        registerProduct(p);
+        return p;
     }
 
-    public abstract Product createProduct(String string);
-
-    public abstract void registerProduct(Product product);
-
+    protected abstract Product createProduct(String owner);
+    protected abstract void registerProduct(Product product);
 }

@@ -1,8 +1,10 @@
 package com.leosanqing.iterator.ordinary;
 
-
-// Iterator 是一个接口，里面定义了我们需要的两个方法，
+/**
+ * @Author: leosanqing
+ * @Date: 2019-09-22 16:54
+ */
 public interface Iterator<T> {
-    boolean hasNext();
     T next();
+    boolean hasNext();
 }

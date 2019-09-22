@@ -1,4 +1,4 @@
-package com.leosanqing.abstractFactory.factory;
+package com.leosanqing.abstractfactory.factory;
 
 import java.io.FileWriter;
 import java.io.IOException;

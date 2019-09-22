@@ -32,10 +32,6 @@ while (iterator.hasNext()){
 ```java
 package com.leosanqing.iterator.vectorImp;
 
-import com.leosanqing.iterator.ordinary.Aggregate;
-import com.leosanqing.iterator.ordinary.Book;
-import com.leosanqing.iterator.ordinary.Iterator;
-
 import java.util.Vector;
 
 /**

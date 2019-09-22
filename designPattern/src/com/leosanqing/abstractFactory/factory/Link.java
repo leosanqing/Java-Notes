@@ -1,4 +1,4 @@
-package com.leosanqing.abstractFactory.factory;
+package com.leosanqing.abstractfactory.factory;
 
 /**
  * @Author: leosanqing

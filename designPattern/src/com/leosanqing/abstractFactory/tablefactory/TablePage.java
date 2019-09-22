@@ -1,7 +1,7 @@
-package com.leosanqing.abstractFactory.tablefactory;
+package com.leosanqing.abstractfactory.tablefactory;
 
-import com.leosanqing.abstractFactory.factory.Item;
-import com.leosanqing.abstractFactory.factory.Page;
+import com.leosanqing.abstractfactory.factory.Item;
+import com.leosanqing.abstractfactory.factory.Page;
 
 /**
  * @Author: leosanqing

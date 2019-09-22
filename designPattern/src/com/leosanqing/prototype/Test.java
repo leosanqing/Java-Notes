@@ -18,7 +18,7 @@ public class Test {
         manager.register(Name.WARNING_MSG.getName(),messageBox);
         manager.register(Name.STRONG_MSG.getName(),messageBox1);
 
-        Product p1 = manager.create(Name.UNDERLINE.getName());
+        Product p1 = manager.create(Name.UNDERLINE.getName()); 
         p1.use("Hello World");
         Product p2 = manager.create(Name.STRONG_MSG.getName());
         p2.use("Hello World");

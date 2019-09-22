@@ -1,7 +1,7 @@
-package com.leosanqing.abstractFactory.listfactory;
+package com.leosanqing.abstractfactory.listfactory;
 
-import com.leosanqing.abstractFactory.factory.Item;
-import com.leosanqing.abstractFactory.factory.Page;
+import com.leosanqing.abstractfactory.factory.Item;
+import com.leosanqing.abstractfactory.factory.Page;
 
 import java.util.Iterator;
 

@@ -2,21 +2,18 @@ package com.leosanqing.iterator.vectorImp;
 
 import com.leosanqing.iterator.ordinary.Iterator;
 
-public class BookShelfIteratorVec<T> implements Iterator{
+public class BookShelfIteratorVec<T> implements Iterator<T> {
     private BookShelf<T> bookShelfVec;
     private int index;
-    public BookShelfIteratorVec(BookShelf bookShelf){
-        this.bookShelfVec = bookShelf ;
+
+    public BookShelfIteratorVec(BookShelf bookShelf) {
+        this.bookShelfVec = bookShelf;
         this.index = 0;
     }
 
     @Override
     public boolean hasNext() {
-        if(index < bookShelfVec.getLength()){
-            return true;
-        }else {
-            return false;
-        }
+        return index < bookShelfVec.getLength();
     }
 
     @Override

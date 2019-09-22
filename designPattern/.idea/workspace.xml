@@ -29,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -85,11 +85,11 @@
       <recent name="com.leosanqing.iterator.vectorImp" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.leosanqing.iterator.ordinary" />
+      <recent name="com.leosanqing.interpreter" />
       <recent name="com.leosanqing.observer" />
       <recent name="com.leosanqing.composite" />
       <recent name="com.leosanqing.strategy" />
-      <recent name="com.leosanqing.bridge" />
-      <recent name="com.leosanqing.abstractFactory.listfactory" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,13 +104,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Test (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.mediator.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.interpreter.Main" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.mediator.*" />
+          <option name="PATTERN" value="com.leosanqing.interpreter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.observer.Main" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.adapter.extend.Test" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.observer.*" />
+          <option name="PATTERN" value="com.leosanqing.adapter.extend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.state.Main" />
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.factory.Test" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.state.*" />
+          <option name="PATTERN" value="com.leosanqing.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.chainofresponsibility.Main" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.iterator.ordinary.Test" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.chainofresponsibility.*" />
+          <option name="PATTERN" value="com.leosanqing.iterator.ordinary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.facade.Main" />
+    <configuration name="TestVec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.iterator.vectorImp.TestVec" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.facade.*" />
+          <option name="PATTERN" value="com.leosanqing.iterator.vectorImp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestVec" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +211,7 @@
       <workItem from="1564214397866" duration="5000" />
       <workItem from="1564669252586" duration="933000" />
       <workItem from="1564700357494" duration="9866000" />
-      <workItem from="1566652077412" duration="55515000" />
+      <workItem from="1566652077412" duration="88891000" />
     </task>
     <servers />
   </component>
@@ -230,6 +230,11 @@
           <url>file://$PROJECT_DIR$/src/com/leosanqing/state/Main.java</url>
           <line>8</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/leosanqing/command/MyFrame.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

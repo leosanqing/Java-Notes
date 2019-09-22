@@ -1,9 +1,9 @@
-package com.leosanqing.abstractFactory.tablefactory;
+package com.leosanqing.abstractfactory.tablefactory;
 
-import com.leosanqing.abstractFactory.factory.Factory;
-import com.leosanqing.abstractFactory.factory.Link;
-import com.leosanqing.abstractFactory.factory.Page;
-import com.leosanqing.abstractFactory.factory.Tray;
+import com.leosanqing.abstractfactory.factory.Factory;
+import com.leosanqing.abstractfactory.factory.Link;
+import com.leosanqing.abstractfactory.factory.Page;
+import com.leosanqing.abstractfactory.factory.Tray;
 
 /**
  * @Author: leosanqing
