@@ -2,9 +2,9 @@ package com.leosanqing.bridge;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 08:46
+ * @Date: 2019-09-23 21:29
  */
-public  class CountDisplay extends Display{
+public class CountDisplay extends Display {
 
     public CountDisplay(DisplayImpl display) {
         super(display);
@@ -18,4 +18,6 @@ public  class CountDisplay extends Display{
         }
         close();
     }
+
+
 }

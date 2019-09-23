@@ -209,7 +209,17 @@
     - 优点：易于增加具体工厂
     - 缺点：难以增加新的零件(因为已经全部写死在抽象父类，要改之前所有的具体工厂都要改)
   - 在Item中，他的子类 Link 和 Tray 都是他的子类，所以在Page和Tray增加的时候中直接传入Item就行了，不需要知道具体是Link还是Tray
-- 
+
+### 分开考虑
+
+- Bridge
+  - 类的层次结构的两个作用
+    - 增加新的功能
+    - 增加新的实现
+  - Bridge 使用 委托+Tamplate
+  - 将类的功能层次和类的实现层次连接起来
+- Strategy
+  - 
 
 
 
@@ -233,6 +243,14 @@
 
 - Factory
 - Abstract Factory
+- Bridge
+
+
+
+## 使用了委托的设计模式（继承是强关联，委托是弱关联）
+
+- Adapter
+- Bridge
 
 
 
@@ -243,3 +261,4 @@
 - new 关键字(这个用的最多)
 - Class.forname().newInstance().这个也常见
 - clone  这个不常见，但是也很有用在prototype中
+

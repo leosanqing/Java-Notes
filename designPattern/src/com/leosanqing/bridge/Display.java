@@ -2,7 +2,7 @@ package com.leosanqing.bridge;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 08:38
+ * @Date: 2019-09-23 08:38
  * |
  * Bridge方法是将类的功能层次和类的实现层次相分离的模式
  *
@@ -24,17 +24,18 @@ public  class Display {
     public void open(){
         display.rawOpen();
     }
-    public final void display(){
-        open();
-        print();
-        close();
+
+    public void print(){
+        display.rawPrint();
     }
 
-    public void close() {
+    public void close(){
         display.rawClose();
     }
 
-    public void print() {
-        display.rawPrint();
+    public void display(){
+        open();
+        print();
+        close();
     }
 }
