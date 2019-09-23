@@ -21,9 +21,8 @@ public class ListPage extends Page {
         buffer.append("<body>\n");
         buffer.append("<h1>" + title + "</h1>");
         buffer.append("<ul>\n");
-        Iterator<Item> iterator = content.iterator();
-        while (iterator.hasNext()) {
-            buffer.append(iterator.next().makeHTML());
+        for (Item item : content) {
+            buffer.append(item.makeHTML());
         }
         buffer.append("</ul>\n");
         buffer.append("<hr><address>" + author + "</address>");

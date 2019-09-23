@@ -4,7 +4,7 @@ import com.leosanqing.prototype.framework.Product;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-08-02 07:09
+ * @Date: 2019-09-23 07:09
  */
 public class MessageBox implements Product {
     private char c;
@@ -27,6 +27,8 @@ public class MessageBox implements Product {
         System.out.println();
     }
 
+    // 因为 MessageBox是Product的子类，所以可以强转为Product，
+    // 并在Manager类中使用Product 接收 MessageBox 和UnderlinePane
     @Override
     public Product createClone() {
         Product p = null;

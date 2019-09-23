@@ -104,13 +104,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test (2)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.interpreter.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.abstractfactory.factory.Main" />
       <module name="designPattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leosanqing.interpreter.*" />
+          <option name="PATTERN" value="com.leosanqing.abstractfactory.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.builder.Main" />
+      <module name="designPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.builder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,19 +170,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestVec" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.iterator.vectorImp.TestVec" />
-      <module name="designPattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leosanqing.iterator.vectorImp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leosanqing.adapter.extend.Test" />
       <module name="designPattern" />
@@ -185,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test (2)" />
         <item itemvalue="Application.Test (1)" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestVec" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +211,7 @@
       <workItem from="1564214397866" duration="5000" />
       <workItem from="1564669252586" duration="933000" />
       <workItem from="1564700357494" duration="9866000" />
-      <workItem from="1566652077412" duration="88891000" />
+      <workItem from="1566652077412" duration="90737000" />
     </task>
     <servers />
   </component>
