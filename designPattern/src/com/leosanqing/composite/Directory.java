@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 11:05
+ * @Date: 2019-09-24 08:24
  */
 public class Directory extends Entry {
     private String name;
@@ -12,6 +12,7 @@ public class Directory extends Entry {
 
     public Directory(String name) {
         this.name = name;
+
     }
 
     @Override
@@ -22,23 +23,23 @@ public class Directory extends Entry {
     @Override
     public int getSize() {
         int size = 0;
+
         for (Entry entry : directory) {
             size += entry.getSize();
         }
         return size;
     }
 
-    @Override
-    public Entry add(Entry entry) {
+    public void add(Entry entry){
         directory.add(entry);
-        return this;
+
     }
 
     @Override
     protected void printList(String prefix) {
-        System.out.println(prefix + "/" + this);
+        System.out.println(prefix + "/" + this.toString());
         for (Entry entry : directory) {
-            entry.printList(prefix + "/" + this.toString());
+            entry.printList(prefix + "/" + name);
         }
     }
 }

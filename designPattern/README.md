@@ -219,7 +219,17 @@
   - Bridge 使用 委托+Tamplate
   - 将类的功能层次和类的实现层次连接起来
 - Strategy
-  - 
+  - 将整个算法替换，能替换的基础还是都实现自Strategy接口。而且二者所有的都相同，只是函数实现方式不同
+  - 这里面的例子也有使用Singleton模式
+  - 也是用了委托
+
+### 一致性
+
+- Composite
+  - 能够使容器和内容具有一致性
+  - 不必知道传过来的是谁，只要知道他的父类就行
+- Decorator
+  - 装饰边框与被装饰物具有一致性
 
 
 
@@ -244,6 +254,7 @@
 - Factory
 - Abstract Factory
 - Bridge
+- Decorator
 
 
 
@@ -251,6 +262,8 @@
 
 - Adapter
 - Bridge
+- Strategy
+- Decorator
 
 
 

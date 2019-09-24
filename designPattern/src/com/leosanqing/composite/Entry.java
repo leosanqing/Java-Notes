@@ -2,20 +2,17 @@ package com.leosanqing.composite;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 10:33
- *
- * 将 File 和 Directory 看成是同一个东西
- *
- * Composite 模式是将 容器 和 内容 一致性，将多个对象结合在一起
+ * @Date: 2019-09-24 08:16
  */
 public abstract class Entry {
     public abstract String getName();
 
     public abstract int getSize();
 
-    public Entry add(Entry entry) throws FileTreatmentException {
+    public void add(Entry entry) throws FileTreatmentException {
         throw new FileTreatmentException();
     }
+
 
     public void printList() {
         printList("");
@@ -24,6 +21,7 @@ public abstract class Entry {
     protected abstract void printList(String prefix);
 
     public String toString() {
-        return getName() + " (" + getSize() + ")";
+        return getName() + "(" + getSize() + ")";
     }
+
 }

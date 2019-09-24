@@ -2,7 +2,7 @@ package com.leosanqing.composite;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 11:03
+ * @Date: 2019-09-24 08:22
  */
 public class File extends Entry {
     private String name;

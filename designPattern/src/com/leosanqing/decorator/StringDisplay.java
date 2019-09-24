@@ -2,9 +2,9 @@ package com.leosanqing.decorator;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 12:41
+ * @Date: 2019-09-24 22:10
  */
-public class StringDisplay extends Display{
+public class StringDisplay extends Display {
     private String string;
 
     public StringDisplay(String string) {
@@ -23,10 +23,8 @@ public class StringDisplay extends Display{
 
     @Override
     public String getRowText(int rows) {
-        if(rows == 0){
+        if (rows == 0)
             return string;
-        }else{
-            return null;
-        }
+        return null;
     }
 }

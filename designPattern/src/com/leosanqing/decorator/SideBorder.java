@@ -2,14 +2,14 @@ package com.leosanqing.decorator;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 19:26
+ * @Date: 2019-09-24 22:13
  */
 public class SideBorder extends Border {
-    private char c;
+    private char borderChar;
 
-    protected SideBorder(Display display, char c) {
+    protected SideBorder(Display display, char borderChar) {
         super(display);
-        this.c = c;
+        this.borderChar = borderChar;
     }
 
     @Override
@@ -24,7 +24,6 @@ public class SideBorder extends Border {
 
     @Override
     public String getRowText(int rows) {
-
-        return c + display.getRowText(rows) + c;
+        return borderChar + display.getRowText(rows) + borderChar;
     }
 }
