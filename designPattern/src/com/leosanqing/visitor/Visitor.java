@@ -12,6 +12,6 @@ package com.leosanqing.visitor;
  * 缺点： 难以增加 Entry 的子类，如果我们增加一个新的类，就要修改Visitor的类
  */
 public abstract class Visitor {
-    public abstract void visit(File file);
-    public abstract void visit(Directory directory);
+    public abstract void visitor(File file);
+    public abstract void visitor(Directory directory);
 }

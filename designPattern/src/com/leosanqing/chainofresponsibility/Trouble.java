@@ -2,20 +2,22 @@ package com.leosanqing.chainofresponsibility;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 21:32
+ * @Date: 2019-10-22 08:12
  */
 public class Trouble {
-    private int number;
+    private int num;
 
-    public Trouble(int number) {
-        this.number = number;
+    public Trouble(int num) {
+        this.num = num;
+    }
+    public int getNum(){
+        return num;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
+    @Override
     public String toString() {
-        return "[Trouble " + number + "]";
+        return "[Trouble" +
+                 + num +
+                "]";
     }
 }

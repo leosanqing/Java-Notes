@@ -1,20 +1,27 @@
 package com.leosanqing.visitor;
 
+import com.leosanqing.factory.idcard.IDCard;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-15 11:05
+ * @Date: 2019-09-25 08:23
  */
-public class Directory extends Entry {
+public class Directory extends Entry{
     private String name;
-    private ArrayList<Entry> directory = new ArrayList<>();
 
+    private ArrayList<Entry> directory = new ArrayList<>();
     public Directory(String name) {
         this.name = name;
     }
 
+    @Override
+    public Entry add(Entry entry){
+        directory.add(entry);
+        return entry;
+    }
     @Override
     public String getName() {
         return name;
@@ -29,26 +36,12 @@ public class Directory extends Entry {
         return size;
     }
 
-    @Override
-    public Entry add(Entry entry) {
-        directory.add(entry);
-        return this;
-    }
-
-    @Override
-    protected void printList(String prefix) {
-        System.out.println(prefix + "/" + this);
-        for (Entry entry : directory) {
-            entry.printList(prefix + "/" + this.toString());
-        }
-    }
-
-    @Override
-    public void accept(Visitor v) {
-        v.visit(this);
-    }
 
     public Iterator iterator(){
         return directory.iterator();
+    }
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitor(this);
     }
 }
