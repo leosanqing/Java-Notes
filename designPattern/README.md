@@ -238,7 +238,10 @@
 - Visitor
   - 目的：为了**将处理从数据结构中分离**出来。**保存数据结构和以数据结构为基础进行处理**是两种不同的东西
   - 、Visitor模式提高了 Directory 和 FIle 类作为**组件的独立性**
-  - 
+- Chain Of Responsibility
+  - 推卸责任，我处理不了的任务我转交给下一个，直到解决完或者任务到最后无法解决返回错误
+  - 目的：我不知道谁处理，谁分担什么责任。从而达到提高其作为组件的独立性
+  - 如果明确知道谁处理，就可以不用这个，直接交给其处理就行。因为这中模式花时间在转交任务
 
 
 
@@ -264,6 +267,7 @@
 - Abstract Factory
 - Bridge
 - Decorator
+- Chain Of Responsibility
 
 
 
@@ -286,8 +290,4 @@
 - new 关键字(这个用的最多)
 - Class.forname().newInstance().这个也常见
 - clone  这个不常见，但是也很有用在prototype中
-
-## 子类的方法应该在哪里实现
-
-
 
