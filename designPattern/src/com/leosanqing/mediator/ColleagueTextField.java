@@ -6,18 +6,18 @@ import java.awt.event.TextListener;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-17 08:21
+ * @Date: 2019-10-27 10:51
  */
 public class ColleagueTextField extends TextField implements TextListener, Colleague {
     private Mediator mediator;
 
-    public ColleagueTextField(String text, int columns) {
-        super(text, columns);
-    }
-
     @Override
     public void setMediator(Mediator mediator) {
         this.mediator = mediator;
+    }
+
+    public ColleagueTextField(String text, int columns) {
+        super(text, columns);
     }
 
     @Override
