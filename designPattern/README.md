@@ -257,13 +257,19 @@
 ### 管理状态
 
 - Observer
+
   - 当观察的对象的状态发生变化时，会通知给观察者。
+
   - 适用于：根据对象的状态进行相应处理的场景
+
   - 目的：**使类称为可复用的组件**。在Observer模式中，带状态的RandomNumberGenerator 和**接收状态变化**的DigitObserver 和 GraphGenerator。链接这两个的使他们的接口 Observer 和 Generator 
+
     - 一方面，RandomNumberGenerator 类并不知道，也无须在意正在观察自己的是DigitObserver 还是 GraphObserver。他只需要知道 **这些都实现了Observer接口就行**，因为他们都会实现update方法
     - 另一方面，DigitObserver 也无需在意自己观察的究竟是 RandomNumberGenerator类 还是其他。他只需要知道 这些类是 **NumberGenerator 类的子类就行**，并且有getNumber方法
+
   - 注意：**Observer的注册顺序会影响通知顺序**，如果先添加 DigitObserver ，那么就先通知他，反过来亦然
-  - 
+
+    
 
 
 
