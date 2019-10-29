@@ -249,6 +249,21 @@
   - 目的：将各个类，业务之间的联系在内部实现，从而达到 **程序与外部之间的关系弱化，更容易使包(类的集合)作为组件被复用**
   - 好处：维护方便
   - 用在哪：当我们做大型项目的时候，往往有很多包，很多类。如果我们用这个来代替自己脑袋里所知道的调用规则，顺序，那么我们可以省多少时间去想他们的调用关系。
+- Mediator
+  - Mediator 不让互相关联的对象之间进行任何通信，而是交给中介者来进行
+  - 好处：降低了各个类之间的耦合
+  - 缺点： 随着类的增加，**中介者必然会膨胀的非常大而且复杂**，难以维护
+
+### 管理状态
+
+- Observer
+  - 当观察的对象的状态发生变化时，会通知给观察者。
+  - 适用于：根据对象的状态进行相应处理的场景
+  - 目的：**使类称为可复用的组件**。在Observer模式中，带状态的RandomNumberGenerator 和**接收状态变化**的DigitObserver 和 GraphGenerator。链接这两个的使他们的接口 Observer 和 Generator 
+    - 一方面，RandomNumberGenerator 类并不知道，也无须在意正在观察自己的是DigitObserver 还是 GraphObserver。他只需要知道 **这些都实现了Observer接口就行**，因为他们都会实现update方法
+    - 另一方面，DigitObserver 也无需在意自己观察的究竟是 RandomNumberGenerator类 还是其他。他只需要知道 这些类是 **NumberGenerator 类的子类就行**，并且有getNumber方法
+  - 注意：**Observer的注册顺序会影响通知顺序**，如果先添加 DigitObserver ，那么就先通知他，反过来亦然
+  - 
 
 
 
