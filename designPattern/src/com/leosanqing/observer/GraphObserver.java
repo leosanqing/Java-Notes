@@ -2,14 +2,15 @@ package com.leosanqing.observer;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-18 22:33
+ * @Date: 2019-10-29 08:03
  */
-public class GraphObserver implements Observer {
+public class GraphObserver implements  Observer{
+
     @Override
-    public void update(NumberGenerator generator) {
-        System.out.print("GraphGenerator:");
-        for (int i = 0; i < generator.getNumber(); i++) {
-            System.out.print('*');
+    public void update(NumberGenerator numberGenerator) {
+        System.out.print("GraphObserver: ");
+        for (int i = 0; i < numberGenerator.getNumber(); i++) {
+            System.out.print("*");
         }
         System.out.println();
         try {

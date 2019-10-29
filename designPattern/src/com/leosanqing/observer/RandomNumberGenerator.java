@@ -4,12 +4,11 @@ import java.util.Random;
 
 /**
  * @Author: leosanqing
- * @Date: 2019-09-18 22:30
+ * @Date: 2019-10-29 08:00
  */
-public class RandomNumberGenerator extends NumberGenerator {
-    private int number;
+public class RandomNumberGenerator<T> extends NumberGenerator {
     private Random random = new Random();
-
+    private int number;
     @Override
     public int getNumber() {
         return number;
