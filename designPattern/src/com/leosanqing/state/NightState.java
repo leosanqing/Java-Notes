@@ -5,7 +5,7 @@ package com.leosanqing.state;
  * @Date: 2019-09-19 21:28
  */
 public class NightState implements State {
-    public static volatile NightState instance = null;
+    private static volatile NightState instance = null;
 
     private NightState() {
     }
@@ -24,7 +24,7 @@ public class NightState implements State {
     @Override
     public void doClock(Context context, int hour) {
         if (hour > 9 && hour <= 17) {
-            context.changeState(DayState.instance);
+            context.changeState(DayState.getInstance());
         }
     }
 
@@ -43,6 +43,7 @@ public class NightState implements State {
         context.recordLog("晚上的通话录音");
     }
 
+    @Override
     public String toString(){
         return "[晚上]";
     }

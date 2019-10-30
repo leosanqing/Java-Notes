@@ -16,7 +16,7 @@ public class SafeFrame extends Frame implements ActionListener, Context {
     private Button buttonPhone = new Button("正常通话");
     private Button buttonExit = new Button("结束");
 
-    private State state = DayState.instance;
+    private State state = DayState.getInstance();
 
     public SafeFrame(String title) {
         super(title);
@@ -43,7 +43,7 @@ public class SafeFrame extends Frame implements ActionListener, Context {
 
         // 显示
         pack();
-        show();
+        setVisible(true);
 
         buttonUse.addActionListener(this);
         buttonAlarm.addActionListener(this);

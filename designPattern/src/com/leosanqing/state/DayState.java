@@ -7,10 +7,10 @@ package com.leosanqing.state;
  * 因为每次创建一个实例会浪费很多内存，所以使用单例
  */
 public class DayState implements State{
-    public static volatile DayState instance = null;
+    private  static volatile DayState instance = null;
     private DayState (){}
 
-    public DayState getInstance(){
+    public static DayState getInstance(){
         if(null == instance){
             synchronized (DayState.class){
                 if(null == instance){
@@ -23,7 +23,7 @@ public class DayState implements State{
     @Override
     public void doClock(Context context, int hour) {
         if(hour <= 9 || hour>17){
-            context.changeState(NightState.instance);
+            context.changeState(NightState.getInstance());
         }
     }
 
@@ -43,6 +43,7 @@ public class DayState implements State{
     }
 
 
+    @Override
     public String toString(){
         return "[白天]";
     }
