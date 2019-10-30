@@ -6,7 +6,7 @@ package com.leosanqing.proxy;
  */
 public class Main {
     public static void main(String[] args) {
-        Printable proxy = new PrinterProxy("Alice");
+        Printable proxy = new ProxyPrinter("Alice");
         System.out.println("现在的名字是"+proxy.getPrinterName());
 
         proxy.setPrinterName("Bob");

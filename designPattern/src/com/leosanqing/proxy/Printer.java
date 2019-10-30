@@ -1,23 +1,25 @@
 package com.leosanqing.proxy;
 
+import com.leosanqing.adapter.trust.Print;
+
 /**
  * @Author: leosanqing
- * @Date: 2019-09-21 18:26
+ * @Date: 2019-10-30 23:30
  */
 public class Printer implements Printable {
     private String name;
 
-
-    public Printer(String name){
-        heavyJob("正在生成Printer的实例" +name);
-
-    }
     public Printer() {
         heavyJob("正在生成Printer的实例");
     }
 
-    private void heavyJob(String msg) {
-        System.out.println(msg);
+    public Printer(String name) {
+        this.name = name;
+        heavyJob("正在生成Printer的实例(" + name + ")");
+    }
+
+    private void heavyJob(String s) {
+        System.out.println(s);
         for (int i = 0; i < 5; i++) {
             try {
                 Thread.sleep(1000);
@@ -26,10 +28,9 @@ public class Printer implements Printable {
             }
             System.out.print(".");
         }
-
-        System.out.println("finish ...");
-
+        System.out.println("finish");
     }
+
 
     @Override
     public void setPrinterName(String name) {
@@ -37,13 +38,14 @@ public class Printer implements Printable {
     }
 
     @Override
-    public String getPrinterName() {
-        return name;
+    public void print(String string) {
+        System.out.println("===" + name + "===");
+        System.out.println(string);
+
     }
 
     @Override
-    public void print(String string) {
-        System.out.println("==== " + name + " ====");
-        System.out.println(string);
+    public String getPrinterName() {
+        return name;
     }
 }
