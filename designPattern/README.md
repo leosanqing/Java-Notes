@@ -282,8 +282,8 @@
 - Adapter 委托基本后面都要用到
 - Proxy 
 - Tamplate 基础，后面很多模式都会用到这个模式
-- Chain Of Responsibility 
 - Observer
+- Chain Of Responsibility 
 - Mediator
 - Flyeight
 
