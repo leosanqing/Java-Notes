@@ -257,19 +257,28 @@
 ### 管理状态
 
 - Observer
-
   - 当观察的对象的状态发生变化时，会通知给观察者。
-
   - 适用于：根据对象的状态进行相应处理的场景
-
   - 目的：**使类称为可复用的组件**。在Observer模式中，带状态的RandomNumberGenerator 和**接收状态变化**的DigitObserver 和 GraphGenerator。链接这两个的使他们的接口 Observer 和 Generator 
-
     - 一方面，RandomNumberGenerator 类并不知道，也无须在意正在观察自己的是DigitObserver 还是 GraphObserver。他只需要知道 **这些都实现了Observer接口就行**，因为他们都会实现update方法
     - 另一方面，DigitObserver 也无需在意自己观察的究竟是 RandomNumberGenerator类 还是其他。他只需要知道 这些类是 **NumberGenerator 类的子类就行**，并且有getNumber方法
-
   - 注意：**Observer的注册顺序会影响通知顺序**，如果先添加 DigitObserver ，那么就先通知他，反过来亦然
+- Memento
+  - 事先保存状态的相关信息，必要时可以恢复
+  - 注意控制访问实例内部结构的权限。
+    - 比如在这个例子中，我们无法从 gamer包外部来**改变** Memento类中的信息，（注意是改变，不是访问，因为get方法还是public，外部是可以访问的）
+    - 我们在Main中也无法通过 new 的方法直接 new 出 Memento，但是Gamer可以访问Memento，也可以new 出实例
+- State
+  - 使用类表示状态，
+  - 好处：不用每次都进行判断，只需要最开始的地方判断即可。然后后面的调用逻辑都很清晰，如果修改逻辑 ，基本上也不需要在调用的类中修改，只需要对状态类进行修改即可
 
-    
+### 避免浪费
+
+- Flyweight
+  - 共享变量，同一个变量可以被多处使用，从而达到减少内存的作用
+  - 缺点：如果共享的变量修改了，那么引用这个变量的很多地方也会受影响
+
+
 
 
 
