@@ -7,6 +7,15 @@ import java.util.HashMap;
  * @Date: 2019-09-21 10:26
  */
 public class BigCharFactory {
+
+//    enum Singleton{
+//        INSTANCE;
+//        private BigCharFactory instance;
+//        private BigCharFactory getInstance(){
+//
+//        }
+//    }
+
     private HashMap<String,BigChar> pool = new HashMap<>();
 
     private static BigCharFactory instance = null;
@@ -26,7 +35,9 @@ public class BigCharFactory {
         return instance;
     }
 
-    // 使用 synchronized 可以防止 多线程情况下 new 出多个实例
+    /**
+     *   使用 synchronized 可以防止 多线程情况下 new 出多个实例
+     */
     public synchronized BigChar getBigChar(char charName){
         BigChar bigChar = pool.get(charName+"");
         if (bigChar == null) {

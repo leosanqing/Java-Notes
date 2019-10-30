@@ -59,6 +59,7 @@ public class Gamer {
         return prefix + fruitsName[random.nextInt(fruitsName.length)];
     }
 
+    @Override
     public String toString() {
         return "[money = " + money + ",fruit = " + fruits + "]";
     }
