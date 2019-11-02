@@ -24,9 +24,9 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
-|  [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books)  |   面试相关    | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring |
-| :------: | :-----------: | ------ | --------------- | ------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(在更) | 剑指offer题解(java版) | [LeetCode题解](https://github.com/leosanqing/Java-Notes/tree/master/LeetCode) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+| [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | Redis(在更)                                                  | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 # 选对专业
 
