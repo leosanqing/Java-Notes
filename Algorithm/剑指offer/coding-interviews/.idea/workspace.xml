@@ -60,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application._3_FindRepeatNumber">
     <configuration name="_2_Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_2_Singleton" />
       <module name="coding-interviews" />
@@ -68,8 +68,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_3_FindRepeatNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_3_FindRepeatNumber" />
+      <module name="coding-interviews" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._3_FindRepeatNumber" />
         <item itemvalue="Application._2_Singleton" />
       </list>
     </recent_temporary>
@@ -85,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572783744910</updated>
       <workItem from="1572783749918" duration="1008000" />
-      <workItem from="1572825262004" duration="2152000" />
+      <workItem from="1572825262004" duration="5582000" />
     </task>
     <servers />
   </component>
