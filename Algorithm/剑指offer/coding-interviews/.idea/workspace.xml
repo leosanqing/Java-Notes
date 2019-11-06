@@ -60,7 +60,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._3_FindRepeatNumber">
+  <component name="RunManager" selected="Application.FindNumber">
+    <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindNumber" />
+      <module name="coding-interviews" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="_2_Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_2_Singleton" />
       <module name="coding-interviews" />
@@ -77,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindNumber" />
         <item itemvalue="Application._3_FindRepeatNumber" />
         <item itemvalue="Application._2_Singleton" />
       </list>
@@ -93,11 +101,22 @@
       <option name="presentableId" value="Default" />
       <updated>1572783744910</updated>
       <workItem from="1572783749918" duration="1008000" />
-      <workItem from="1572825262004" duration="5582000" />
+      <workItem from="1572825262004" duration="8984000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/_3_FindRepeatNumber.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
