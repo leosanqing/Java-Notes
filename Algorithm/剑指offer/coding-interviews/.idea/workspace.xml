@@ -43,7 +43,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -60,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FindNumber">
+  <component name="RunManager" selected="Application._6_PrintListFromTailToHead">
     <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindNumber" />
       <module name="coding-interviews" />
@@ -69,21 +69,49 @@
       </method>
     </configuration>
     <configuration name="_2_Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_Singleton" />
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._2_Singleton" />
       <module name="coding-interviews" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="_3_FindRepeatNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3_FindRepeatNumber" />
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._3_FindRepeatNumber" />
       <module name="coding-interviews" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_4_FindNumberInTwoDimensionalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._4_FindNumberInTwoDimensionalArray" />
+      <module name="coding-interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_6_PrintListFromTailToHead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._6_PrintListFromTailToHead" />
+      <module name="coding-interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._6_PrintListFromTailToHead" />
+        <item itemvalue="Application._4_FindNumberInTwoDimensionalArray" />
         <item itemvalue="Application.FindNumber" />
         <item itemvalue="Application._3_FindRepeatNumber" />
         <item itemvalue="Application._2_Singleton" />
@@ -101,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572783744910</updated>
       <workItem from="1572783749918" duration="1008000" />
-      <workItem from="1572825262004" duration="8984000" />
+      <workItem from="1572825262004" duration="15824000" />
     </task>
     <servers />
   </component>
@@ -112,7 +140,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/_3_FindRepeatNumber.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/leosanqing/algorithm/_3_FindRepeatNumber.java</url>
           <line>176</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

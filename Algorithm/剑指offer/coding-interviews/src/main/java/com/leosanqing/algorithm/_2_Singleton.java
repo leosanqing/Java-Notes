@@ -1,4 +1,4 @@
-/**
+package com.leosanqing.algorithm; /**
  * @Author: leosanqing
  * @Date: 2019-11-03 20:24
  */
@@ -24,7 +24,7 @@ public class _2_Singleton {
     static class Lazy {
         private static Lazy instance = null;
 
-        //    private volatile static _2_Singleton instance = null;
+        //    private volatile static com.leosanqing.algorithm._2_Singleton instance = null;
         private Lazy() {
         }
 
