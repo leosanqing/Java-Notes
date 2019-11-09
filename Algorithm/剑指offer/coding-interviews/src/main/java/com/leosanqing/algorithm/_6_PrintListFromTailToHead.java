@@ -29,7 +29,7 @@ public class _6_PrintListFromTailToHead {
      * 使用递归来打印
      *
      * 如果像书上使用其他辅助容器，那基本所有容器都可以。
-     * @param head
+     * @param head 头结点
      */
     private static void method(Node head) {
         if (head != null) {
