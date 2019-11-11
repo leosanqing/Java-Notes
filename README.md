@@ -20,7 +20,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | Redis(在更)                                                  | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | Redis                                                        | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 # 选对专业
 
@@ -102,7 +102,13 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
 
 
+# 设计模式
 
+把『图解设计模式』这本书的代码敲了四遍(因为我实在太菜，只能用这种笨办法)，算是勉强入门了。也根据自己的理解，改动了一小部分。
+
+可以看下我现在对设计模式的理解(不一定对)，主要还是**可拓展性**和**各个类之间解耦**从而达到能作为**独立组件存在**的目的
+
+https://github.com/leosanqing/Java-Notes/tree/master/designPattern
 
 # SpringMVC
 
