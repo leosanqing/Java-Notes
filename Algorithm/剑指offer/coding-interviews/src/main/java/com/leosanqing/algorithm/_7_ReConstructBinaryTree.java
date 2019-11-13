@@ -36,6 +36,7 @@ public class _7_ReConstructBinaryTree {
      * 这样我们就能找到树的结构，然后一直递归。再在这个过程中添加上左右子节点。就能完成重构了
      *
      * @param pre 左子树
+     *
      * @param in 右子树
      * @return 根节点
      */
