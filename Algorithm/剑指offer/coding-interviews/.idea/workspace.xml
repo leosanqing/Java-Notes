@@ -43,9 +43,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RunDashboard">
@@ -60,14 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._8_FindNextNode">
-    <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FindNumber" />
-      <module name="coding-interviews" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._9_ImplementQueueWithStack">
     <configuration name="_4_FindNumberInTwoDimensionalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._4_FindNumberInTwoDimensionalArray" />
       <module name="coding-interviews" />
@@ -120,13 +113,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_9_ImplementQueueWithStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._9_ImplementQueueWithStack" />
+      <module name="coding-interviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leosanqing.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._9_ImplementQueueWithStack" />
         <item itemvalue="Application._8_FindNextNode" />
         <item itemvalue="Application._7_ReConstructBinaryTree" />
         <item itemvalue="Application._6_PrintListFromTailToHead" />
         <item itemvalue="Application._4_FindNumberInTwoDimensionalArray" />
-        <item itemvalue="Application.FindNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572783744910</updated>
       <workItem from="1572783749918" duration="1008000" />
-      <workItem from="1572825262004" duration="22772000" />
+      <workItem from="1572825262004" duration="26369000" />
     </task>
     <servers />
   </component>
