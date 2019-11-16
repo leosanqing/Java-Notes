@@ -53,7 +53,6 @@ class MyQueue<T>{
     public void enqueue(T e){
         stack1.push(e);
     }
-
     public T dequeue() throws Exception {
         if(stack1.empty()&&stack2.empty()) {
             throw new Exception("队列为空");
