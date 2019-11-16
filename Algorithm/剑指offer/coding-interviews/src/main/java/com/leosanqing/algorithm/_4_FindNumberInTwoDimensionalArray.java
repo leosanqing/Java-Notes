@@ -21,14 +21,14 @@ public class _4_FindNumberInTwoDimensionalArray {
 
     public static void main(String[] args) {
 
-        int[][] nums ={
-                {1,2,8,9},
-                {2,4,9,12},
-                {4,7,10,13},
-                {6,8,11,15}
+        int[][] nums = {
+                {1, 2, 8, 9},
+                {2, 4, 9, 12},
+                {4, 7, 10, 13},
+                {6, 8, 11, 15}
         };
-        System.out.println(method2(nums,7));
-        System.out.println(method2(nums,5));
+        System.out.println(method2(nums, 7));
+        System.out.println(method2(nums, 5));
     }
 
 
@@ -52,14 +52,14 @@ public class _4_FindNumberInTwoDimensionalArray {
      * 上面的第二种方法，只利用了题目中的一个条件，每列递增。
      * 但是没有用到每行递增。每行可不能用二分法来简化。
      * 因为你不能保证下面一行的每一个数字一定大于上一行的每一行数字
-     *
-     *
+     * <p>
+     * <p>
      * 我们找右上角的数字 x
-     *
+     * <p>
      * 这个数字比较特殊，一定比该行其他数字大，一定比该列其他数字小
      * 如果x目标值大,(后面目标值 简称y)，那么说明这一列的其他数字不用看了，一定比y大，所以列减1
      * 如果比y小，那么这一行的其他数一定也比y小，所以行+1
-     *
+     * <p>
      * 这样我们每一次操作总是排除一整行或一整列
      *
      * @param nums 要找的数
@@ -70,15 +70,14 @@ public class _4_FindNumberInTwoDimensionalArray {
         if (nums == null || nums.length <= 0) {
             return false;
         }
-        int column = nums[0].length-1;
+        int column = nums[0].length - 1;
         int row = 0;
         while (row <= nums.length - 1 && column >= 0) {
-            if(nums[row][column] == num){
+            if (nums[row][column] == num) {
                 return true;
-            }
-            else if (nums[row][column] > num) {
+            } else if (nums[row][column] > num) {
                 --column;
-            } else{
+            } else {
                 ++row;
             }
         }
