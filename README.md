@@ -18,7 +18,7 @@
 
 Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
 
-目前只更新了 HashMap 和JVM的部分内容 ，我会一到两天更新一次.目前在更新
+目前只更新了设计模式 和JVM的部分内容 ，我会一到两天更新一次.目前在更新
 
 如果觉得可以，请点个 star 关注哦，谢谢各位大兄弟，小姐姐。
 
@@ -26,17 +26,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | Redis                                                        | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
-
-# 选对专业
-
-选到计算机互联网行业，真的太爽了，现在还没有完全饱和，可能2-3年后就没那么吃香了。
-
-对比别的专业，我们真的好到不能再好了。
-
-后期说下怎么选专业，再对比下我同学。
-
-穷IT，富金融
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 工具(中间件)                                                 | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 # 书籍
 
@@ -68,6 +58,8 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
 # JVM(基本更完)
 
+可以参考这个来看《深入理解Java虚拟机》
+
 链接：https://github.com/leosanqing/Java-Notes/tree/master/JVM
 
 - ## 自动内存管理
@@ -95,6 +87,13 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
   - 并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
   - [链接](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)
+
+
+
+# Redis
+
+- Redis实战代码(python版)
+- 
 
 # 并发
 

@@ -6,3 +6,6 @@
 
 最近在看《redis实战》这本书，书中用 python2写的，准备用Java实现一下，顺便整理一下里面的东西。
 
+链接：[Redis 实战](https://github.com/leosanqing/Java-Notes/tree/master/Utils/Redis)
+
+代码：

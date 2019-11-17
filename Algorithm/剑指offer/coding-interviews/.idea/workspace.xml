@@ -61,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application._11_SpinArray">
+  <component name="RunManager" selected="Application._15_Count1InBinaryNum">
     <configuration name="_10_Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._10_Fibonacci" />
       <module name="coding-interviews" />
@@ -88,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_7_ReConstructBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._7_ReConstructBinaryTree" />
+    <configuration name="_15_Count1InBinaryNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.leosanqing.algorithm._15_Count1InBinaryNum" />
       <module name="coding-interviews" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._15_Count1InBinaryNum" />
         <item itemvalue="Application._11_SpinArray" />
         <item itemvalue="Application._10_Fibonacci" />
         <item itemvalue="Application._9_ImplementQueueWithStack" />
         <item itemvalue="Application._8_FindNextNode" />
-        <item itemvalue="Application._7_ReConstructBinaryTree" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572783744910</updated>
       <workItem from="1572783749918" duration="1008000" />
-      <workItem from="1572825262004" duration="31626000" />
+      <workItem from="1572825262004" duration="34240000" />
     </task>
     <servers />
   </component>
@@ -175,8 +175,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/leosanqing/algorithm/_11_SpinArray.java</url>
-          <line>89</line>
+          <line>96</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leosanqing/algorithm/_15_Count1InBinaryNum.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

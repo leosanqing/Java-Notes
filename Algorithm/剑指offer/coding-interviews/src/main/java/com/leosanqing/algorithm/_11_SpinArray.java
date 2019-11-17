@@ -69,6 +69,12 @@ public class _11_SpinArray {
     }
 
 
+    /**
+     * 如果旋转的是非递减的序列
+     * @param nums
+     * @return
+     * @throws Exception
+     */
     private static int method3(int[] nums) throws Exception {
         if (nums == null || nums.length == 0) {
             throw new Exception("数组为空");
@@ -87,6 +93,7 @@ public class _11_SpinArray {
             }
             mid = (right + left) / 2;
 
+            // 我们在这个区间要挨个比较
             if (nums[left] == nums[right] && nums[mid] == nums[left]) {
                 if (nums[left + 1] != nums[right - 1]) {
                     mid = nums[left + 1] > nums[right - 1] ? right - 1 : left + 1;
