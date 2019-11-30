@@ -18,7 +18,11 @@ public class _15_Count1InBinaryNum {
         System.out.println(method2(9));
         System.out.println(method2(Integer.MAX_VALUE));
         System.out.println(method2(Integer.MIN_VALUE));
+
+
     }
+
+
 
     /**
      * 常规解法，将二进制的每一位从右往左与当前位的1进行 与(&)运算
