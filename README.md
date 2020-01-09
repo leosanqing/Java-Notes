@@ -6,17 +6,7 @@
 
 --------------
 
-双十一买了三分之一，现在就摞成两摞了，看了一半还有一半
-
-![](img/IMG_20191120_212413-min.jpg)
-
-
-
-
-
-推荐几个最近在看的书，『少有人走的路』，『认知天性』，『海街日记』。第一个讲如何成为一个心智成熟的人，成年不代表心智成熟。第二个是讲述如何学习。第三个讲述家人的羁绊，是部未完结的漫画，心情不好的时候可以看看，很治愈。
-
-
+最近没有更这个模块了，不是去偷懒了。我搞了个小项目，就是那种烂大街的，springboot 的电商项目。不过这个是有升级的，从单体一步步往上升级，到集群到分布式，(当然,这个不是我写的)。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
 **最近在更算法部分，先从剑指offer开始，毕竟面试要用的。**
 
@@ -34,7 +24,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | 工具(中间件)                                                 | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 # 书籍
 
