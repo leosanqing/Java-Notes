@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09fdb856-648e-43af-a74c-1c6fce70c1c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../../spring/environment/apache-maven-3.6.0/repository" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../spring/environment/apache-maven-3.6.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WSDLzDzDEIVgHJBDZ616T1d21m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/leosanqing" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="JUnit.VersionTest.AnonymousInnerClass">
+    <configuration name="VersionTest.AnonymousInnerClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lambda_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambda" />
+      <option name="MAIN_CLASS_NAME" value="lambda.VersionTest" />
+      <option name="METHOD_NAME" value="AnonymousInnerClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionTest.filterStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lambda_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambda" />
+      <option name="MAIN_CLASS_NAME" value="lambda.VersionTest" />
+      <option name="METHOD_NAME" value="filterStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionTest.getFemaleStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lambda_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambda" />
+      <option name="MAIN_CLASS_NAME" value="lambda.VersionTest" />
+      <option name="METHOD_NAME" value="getFemaleStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionTest.getStudentByAgeOrTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lambda_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambda" />
+      <option name="MAIN_CLASS_NAME" value="lambda.VersionTest" />
+      <option name="METHOD_NAME" value="getStudentByAgeOrTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersionTest.getStudentBySex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lambda_demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lambda" />
+      <option name="MAIN_CLASS_NAME" value="lambda.VersionTest" />
+      <option name="METHOD_NAME" value="getStudentBySex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VersionTest.AnonymousInnerClass" />
+        <item itemvalue="JUnit.VersionTest.filterStudent" />
+        <item itemvalue="JUnit.VersionTest.getStudentByAgeOrTeacher" />
+        <item itemvalue="JUnit.VersionTest.getStudentBySex" />
+        <item itemvalue="JUnit.VersionTest.getFemaleStudent" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09fdb856-648e-43af-a74c-1c6fce70c1c6" name="Default Changelist" comment="" />
+      <created>1579134050324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579134050324</updated>
+      <workItem from="1579134054968" duration="6466000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1120" y="945" key="#Auto_Import" timestamp="1579219190415">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-1120" y="945" key="#Auto_Import/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579219190415" />
+    <state x="-1120" y="945" key="#Project_Structure" timestamp="1579220364446">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-1120" y="945" key="#Project_Structure/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579220364446" />
+    <state x="-907" y="996" key="#com.intellij.ide.util.MemberChooser" timestamp="1579449118437">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-907" y="996" key="#com.intellij.ide.util.MemberChooser/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579449118437" />
+    <state width="1398" height="958" key="GridCell.Tab.0.bottom" timestamp="1579449732640">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="958" key="GridCell.Tab.0.bottom/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579449732640" />
+    <state width="1398" height="958" key="GridCell.Tab.0.center" timestamp="1579449732637">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="958" key="GridCell.Tab.0.center/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579449732637" />
+    <state width="1398" height="958" key="GridCell.Tab.0.left" timestamp="1579449732635">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="958" key="GridCell.Tab.0.left/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579449732635" />
+    <state width="1398" height="958" key="GridCell.Tab.0.right" timestamp="1579449732638">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state width="1398" height="958" key="GridCell.Tab.0.right/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579449732638" />
+    <state x="-1211" y="919" key="SettingsEditor" timestamp="1579134089309">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-1211" y="919" key="SettingsEditor/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579134089309" />
+    <state x="-925" y="1065" key="chooseDestDirectoryDialog" timestamp="1579134396096">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-925" y="1065" key="chooseDestDirectoryDialog/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579134396096" />
+    <state x="-1055" y="611" width="670" height="676" key="search.everywhere.popup" timestamp="1579219142667">
+      <screen x="-1440" y="0" width="1440" height="2560" />
+    </state>
+    <state x="-1055" y="611" width="670" height="676" key="search.everywhere.popup/-1440.0.1440.2560/0.0.1680.1050@-1440.0.1440.2560" timestamp="1579219142667" />
+  </component>
+</project>
