@@ -6,25 +6,55 @@
 
 --------------
 
-最近没有更这个模块了，不是去偷懒了。我搞了个小项目，就是那种烂大街的，springboot 的电商项目。不过这个是有升级的，从单体一步步往上升级，到集群到分布式，(当然,这个不是我写的)。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
-
-**最近在更算法部分，先从剑指offer开始，毕竟面试要用的。**
+最近没有更这个模块了，不是去偷懒了。我搞了个小项目，就是那种烂大街的，springboot 的电商项目。不过这个是有升级的，从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
 
-
-码字不易，点个star吧。尤其是自从我入职后，最近这些都是我起早贪黑写的。**早上6点多起来，晚上12点多睡**，你们看我提交的时间不是早上7点多就是晚上11点多。
 
 Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
 
-目前只更新了设计模式 和JVM的部分内容 ，我会一到两天更新一次.目前在更新
 
-如果觉得可以，请点个 star 关注哦，谢谢各位大兄弟，小姐姐。
+
+码字不易，点个star吧。
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+
+
+
+# 项目
+
+我是想通过项目，来一步步讲述我们常说的比如 Nginx、redis、kafka、keepalived 等等是怎么一步步应用至项目里面的，通过项目来说明在那种情况下，在哪种背景下我们采用哪种技术。每篇博客里面都有一个前言，里面介绍了相关背景
+
+目前完成了两个版本迭代
+
+
+
+**我后面的配置都是根据博客来配置的，所以基本上每篇博客我都进行过从零部署**，一般不会出现太大的问题，如果遇到困难或者哪里写的有问题也可以直接联系我。
+
+## 版本
+
+## 1.0
+
+单体项目，前端运行在tomcat即可，后端直接使用idea运行，更改数据库等配置即可
+
+## 2.0
+
+采用 LVS+Keepalived+Nginx 实现高可用以及高并发集群
+
+使用 Redis作为缓存，提升系统性能，搭建集群提高并发和高可用
+
+- LVS+Keepalived+Nginx
+  - [Nginx](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/nginx%E5%AE%89%E8%A3%85)(待更)
+  - [keepalived](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/keepalived)
+  - [LVS](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/lvs)
+  - [LVS+Keepalived](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/lvs%2Bkeepalived)
+- Redis相关
+  - [redis安装和配置](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis)
+  - [主从复制和哨兵模式](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis/%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6)
+  - Redis集群配置(待更)
 
 # 书籍
 
