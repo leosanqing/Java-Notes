@@ -324,5 +324,30 @@ public class TeacherPredicate implements StudentPredicate{
 
 
 
-通过这样的介绍，现在你应该知道 lambda 表达式 其实也没有那么难理解了吧
+通过这样的介绍，现在你应该知道 lambda 表达式 其实也没有那么难理解了吧,你就把他当成**匿名函数**来理解会容易的多
+
+在我上大学的时候，那个时候还在讲Java的GUI，当我们定义按钮和何种监听器的时候，为了方便，几乎都用匿名内部类来完成。
+
+再比如我们使用 多线程的时候
+
+```java
+new Thread(new Runnable() {
+            @Override
+            public void run() {
+                
+            }
+        });
+```
+
+那我们就可以用lambda写成这样子的
+
+```java
+new Thread(()->{
+  //这个里面写的就是run方法里面的内容
+});
+```
+
+
+
+
 
