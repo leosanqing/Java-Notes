@@ -18,6 +18,8 @@
 
 我用个小例子讲述下，我们在做crud的时候，都是怎么完成功能的。然后怎么根据需求变更版本，最后再讲lambda表达式
 
+如果想运用lambda表达式，使用JDK8的另一个新特性 Stream ，效果会更好，可以参考我的这篇文章 [JDK8 新特性stream](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/stream)
+
 # 背景
 
 
@@ -351,3 +353,109 @@ new Thread(()->{
 
 
 
+# 接口
+
+| 函数式接口                | 参数类型 | 返回类型    | 用途                                                        |
+| ------------------------- | -------- | ----------- | ----------------------------------------------------------- |
+| **Consumer(消费型接口)**  | **T**    | **void**    | **对类型为T的对象应用操作。void accept(T t)**               |
+| **Supplier(供给型接口)**  | **无**   | **T**       | **返回类型为T的对象。 T get();**                            |
+| **Function(函数型接口)**  | **T**    | **R**       | **对类型为T的对象应用操作并返回R类型的对象。R apply(T t);** |
+| **Predicate(断言型接口)** | **T**    | **boolean** | **确定类型为T的对象是否满足约束。boolean test(T t);**       |
+
+ 上面是我们常用到的四种函数接口，我们之前代码展示的就是 Predicate的接口，我们使用的 filter方法，返回的是一个 bool值
+
+如果想了解或者实战，使用stream编程的时候会更深刻，可以看看我的这篇文章。 [Stream流编程](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/stream)
+
+
+
+那么如果我们自己定义一个你能够使用 lambda表达式的接口，应该注意什么呢
+
+## 条件
+
+**接口中有且只有一个抽象方法**
+
+
+
+我们看到我们的代码中，我们的接口中只有 filter 这一个抽象方法。
+
+我们自己定义的时候，可以使用jdk8 新提供的一个注解  `@FunctionalInterface` ，这个没有其他作用，就是标示他是一个函数式接口，也就是能够直接用来写lambda表达式的接口。不满足条件的就会报错
+
+比如我们接口中没有抽象方法，或者抽象方法有两个及以上就会报以下的错误
+
+![](img/Xnip2020-02-11_12-42-10.jpg)
+
+![Xnip2020-02-11_12-42-34](img/Xnip2020-02-11_12-42-34.jpg)
+
+# 方法引用
+
+我们有时候会看到这样的代码
+
+
+
+```java
+    public void peekTest() {
+        studentList.stream()
+                .peek(System.out::println)
+                .sorted(Comparator.comparingInt(Student::getAge))
+                .forEach(stu -> System.out.println(JSON.toJSONString(stu, true)));
+    }
+```
+
+
+
+第一次看这个的时候肯定会懵，这个双冒号是什么鬼？
+
+其实这个是 **方法引用**
+
+## 定义
+
+方法引用 是 **lambda表达式的一种快捷写法**，记住他是lambda的一种快捷写法，要**先能写成lambda才能写成 方法引用**
+
+```javascript
+Stu						::				getAge
+目标引用			双冒号				方法名
+```
+
+## 类型
+
+1. 指向 静态方法的方法引用
+
+   ```java
+       public void test1(){
+           Consumer<String> consumer1 = number -> Integer.parseInt(number);
+   
+           Consumer<String> consumer2 = Integer::parseInt;
+           
+       }
+   ```
+
+   
+
+2. 指向现有对象的实例方法的方法引用
+
+   ```java
+       public void test2(){
+           Consumer<String> consumer1 = number -> number.length();
+   
+           Consumer<String> consumer2 = String::length;
+   
+       }
+   ```
+
+   
+
+3. 指向任意类型实例方法的方法引用
+
+   ```java
+       public void test3(){
+   
+           StringBuilder stringBuilder = new StringBuilder();
+           Consumer<String> consumer1 = number -> stringBuilder.append(number);
+   
+           Consumer<String> consumer2 = stringBuilder::append;
+   
+       }
+   
+   ```
+
+   
