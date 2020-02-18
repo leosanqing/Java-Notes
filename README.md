@@ -6,7 +6,7 @@
 
 --------------
 
-最近没有更这个模块了，不是去偷懒了。我搞了个小项目，就是那种烂大街的，springboot 的电商项目。不过这个是有升级的，从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
+最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
 
 
@@ -15,6 +15,13 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 
 码字不易，点个star吧。
+
+这边是最近更的两篇文章。
+
+- [lambda表达式](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/lambda)
+- [stream流操作](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/stream)
+
+
 
 **邀请老哥，小姐姐们一起完成这个repo**
 
@@ -29,6 +36,10 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 我是想通过项目，来一步步讲述我们常说的比如 Nginx、redis、kafka、keepalived 等等是怎么一步步应用至项目里面的，通过项目来说明在那种情况下，在哪种背景下我们采用哪种技术。每篇博客里面都有一个前言，里面介绍了相关背景
 
 目前完成了两个版本迭代
+
+目前项目的架构图
+
+![](img/Xnip2020-02-17_23-20-02.jpg)
 
 
 
