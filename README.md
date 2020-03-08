@@ -6,6 +6,8 @@
 
 --------------
 
+最近要换工作了，过几天就回成都了。这几天在弄3.0版本，一大堆东西要寄。
+
 最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
 
@@ -23,8 +25,6 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 
 
-**邀请老哥，小姐姐们一起完成这个repo**
-
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
@@ -35,11 +35,11 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 我是想通过项目，来一步步讲述我们常说的比如 Nginx、redis、kafka、keepalived 等等是怎么一步步应用至项目里面的，通过项目来说明在那种情况下，在哪种背景下我们采用哪种技术。每篇博客里面都有一个前言，里面介绍了相关背景
 
-目前完成了两个版本迭代
+目前完成了两个版本迭代，第三个版正在做
 
 目前项目的架构图
 
-![](img/Xnip2020-02-17_23-20-02.jpg)
+![](img/Xnip2020-03-08_21-24-27.jpg)
 
 
 
@@ -47,15 +47,14 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 ## 版本
 
-## 1.0
+### 1.0
 
 单体项目，前端运行在tomcat即可，后端直接使用idea运行，更改数据库等配置即可
 
-## 2.0
+### 2.0
 
-采用 LVS+Keepalived+Nginx 实现高可用以及高并发集群
-
-使用 Redis作为缓存，提升系统性能，搭建集群提高并发和高可用
+- 采用 LVS+Keepalived+Nginx 实现高可用以及高并发集群
+- 使用 Redis作为缓存，提升系统性能，搭建集群提高并发和高可用
 
 - LVS+Keepalived+Nginx
   - [Nginx](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/nginx%E5%AE%89%E8%A3%85)(待更)
@@ -66,6 +65,15 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
   - [redis安装和配置](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis)
   - [主从复制和哨兵模式](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis/%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6)
   - Redis集群配置(待更)
+
+### 3.0
+
+这个版本主要增加了 几个个中间件
+
+- 使用ES 做为搜索，搜索的关键词可高亮
+- 使用FastDFS 作为图片上传的工具。
+- 使用 RabbitMQ 作为消息队列
+- 使用 ELK(ES，Kibana、LogStash) + kafka 作为日志搜集
 
 # 书籍
 
