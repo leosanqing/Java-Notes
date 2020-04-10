@@ -4,22 +4,17 @@
 
 # 写在前面
 
---------------
 
-最近要换工作了，过几天就回成都了。这几天在弄3.0版本，一大堆东西要寄。
 
 最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
-
-
 Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
-
-
 
 码字不易，点个star吧。
 
-这边是最近更的两篇文章。
+这边是最近更的几篇文章
 
+- [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
 - [lambda表达式](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/lambda)
 - [stream流操作](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/stream)
 
@@ -71,9 +66,9 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 这个版本主要增加了 几个个中间件
 
 - 使用ES 做为搜索，搜索的关键词可高亮
-- 使用FastDFS 作为图片上传的工具。
+- [使用FastDFS 作为图片上传的工具](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/fastdfs/FastDFS%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE)
 - 使用 RabbitMQ 作为消息队列
-- 使用 ELK(ES，Kibana、LogStash) + kafka 作为日志搜集
+- [使用 ELK(ES，Kibana、LogStash) + kafka 作为日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
 
 # 书籍
 
@@ -134,13 +129,6 @@ https://github.com/leosanqing/Java-Notes/tree/master/books
 
   - 并发准备放在并发编程那一模块，JVM这本书上和并发编程讲到的有一些小细节不一样，那个更加详细，因此到时候就放并发模块的目录。
   - [链接](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)
-
-
-
-# Redis
-
-- Redis实战代码(python版)
-- 
 
 # 并发
 
