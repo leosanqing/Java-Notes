@@ -15,6 +15,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 这边是最近更的几篇文章
 
 - [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
+- [ELK、Kafka日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka完成日志搜集)
 - [lambda表达式](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/lambda)
 - [stream流操作](https://github.com/leosanqing/Java-Notes/tree/master/Utils/jdk8%E6%96%B0%E7%89%B9%E6%80%A7/stream)
 
@@ -34,7 +35,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 目前项目的架构图
 
-![](img/Xnip2020-03-08_21-24-27.jpg)
+![](img/Xnip2020-04-14_17-21-28.jpg)
 
 
 
@@ -59,7 +60,7 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 - Redis相关
   - [redis安装和配置](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis)
   - [主从复制和哨兵模式](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis/%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6)
-  - Redis集群配置(待更)
+  - Redis集群配置
 
 ### 3.0
 
@@ -68,7 +69,8 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 - 使用ES 做为搜索，搜索的关键词可高亮
 - [使用FastDFS 作为图片上传的工具](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/fastdfs/FastDFS%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE)
 - 使用 RabbitMQ 作为消息队列
-- [使用 ELK(ES，Kibana、LogStash) + kafka 作为日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
+- [使用 ELK + kafka 作为日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
+- [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
 
 # 书籍
 
