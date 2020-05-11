@@ -6,7 +6,7 @@
 
 
 
-最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在我只完成了单体的部分，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
+最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在已经完成了三个版本，微服务版本正在进行，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
 
 Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
 
@@ -21,9 +21,27 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 
 
+前段时间看了几本非技术书籍，更新了下书籍模块的书单
+
+- 跌荡一百年、激荡三十年、激荡十年(作者吴晓波，从商人或者社会经济的角度分析我们国家从清末到2018年的变革。纵观全局可以看到 官商模式基本从未改变,科技在进步，历史仍在轮回。可以看到清末官商如何试图拯救清朝；抗日战争时期中国商人发挥的作用；不可说的十年之中,商人如何挣扎生存；从改革开放之后，经济制度如何改变，中国如何腾飞)
+
+- 全球科技通识(什么是科学，什么是技术？什么又是科技，中国（也可以说东方）为啥一直缺乏科学思维，为啥工业革命之后科技发展的这么快。通过科技的路线讲解人类文明的历史)
+
+- 腾讯传(腾讯是如何从通信软件变成现在的巨无霸，在各个战役中，腾讯如何应对。最终，为什么会有中国最早的产品经理马化腾和最牛产品经理 张小龙)
+
+- 永恒的终结(基地前传,永恒国度的人试图通过时光机来改变各个历史，防止人们走向毁灭，最终永恒国度又是如何瓦解，为什么瓦解)
+
+- 童年的终结(比人类更高文明的超主，也只是更高文明的奴隶附庸。最终人类是如何进化，人类是如何灭绝。有另外一个名称，最后一个地球人)
+
+- 
+
+  
+
+
+
 | [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming)(在更) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 
 
@@ -31,11 +49,11 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 我是想通过项目，来一步步讲述我们常说的比如 Nginx、redis、kafka、keepalived 等等是怎么一步步应用至项目里面的，通过项目来说明在那种情况下，在哪种背景下我们采用哪种技术。每篇博客里面都有一个前言，里面介绍了相关背景
 
-目前完成了两个版本迭代，第三个版正在做
+目前完成了三个版本迭代，第四个版本改造成微服务正在做
 
 目前项目的架构图
 
-![](img/Xnip2020-04-14_17-21-28.jpg)
+![](img/Xnip2020-05-11_14-31-29.jpg)
 
 
 
@@ -43,9 +61,23 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 ## 版本
 
-### 1.0
+### 4.0
 
-单体项目，前端运行在tomcat即可，后端直接使用idea运行，更改数据库等配置即可
+这个版本使用 SpringCloud 对项目进行了重构
+
+![](img/Xnip2020-05-11_14-39-28.jpg)
+
+### 3.0
+
+这个版本主要增加了 几个个中间件
+
+- 使用ES 做为搜索，搜索的关键词可高亮
+- [使用FastDFS 作为图片上传的工具](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/fastdfs/FastDFS%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE)
+- 使用 RabbitMQ 作为消息队列
+- [使用 ELK + kafka 作为日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
+- [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
+
+
 
 ### 2.0
 
@@ -62,15 +94,13 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
   - [主从复制和哨兵模式](https://github.com/leosanqing/food-shop/tree/master/2.0/blog/redis/%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6)
   - Redis集群配置
 
-### 3.0
 
-这个版本主要增加了 几个个中间件
 
-- 使用ES 做为搜索，搜索的关键词可高亮
-- [使用FastDFS 作为图片上传的工具](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/fastdfs/FastDFS%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE)
-- 使用 RabbitMQ 作为消息队列
-- [使用 ELK + kafka 作为日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97%E6%90%9C%E9%9B%86)
-- [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
+### 1.0
+
+单体项目，前端运行在tomcat即可，后端直接使用idea运行，更改数据库等配置即可
+
+
 
 # 书籍
 
