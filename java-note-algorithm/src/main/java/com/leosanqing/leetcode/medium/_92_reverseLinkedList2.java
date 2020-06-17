@@ -1,7 +1,5 @@
 package com.leosanqing.leetcode.medium;
 
-import java.util.List;
-
 /**
  * @Author: rtliu
  * @Date: 2020/6/1 下午7:01
@@ -46,6 +44,7 @@ public class _92_reverseLinkedList2 {
             cur2 = next;
         }
 
+        // 反转完之后，链接 m 之前的节点 和 n 后的节点
         pre1.next = pre2;
         cur1.next = cur2;
 

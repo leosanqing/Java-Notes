@@ -1,4 +1,4 @@
-package com.leosanqing.leetcode.medium;
+package com.leosanqing.leetcode.medium.array;
 
 import java.util.Arrays;
 import java.util.LinkedList;
