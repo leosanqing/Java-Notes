@@ -35,14 +35,14 @@ public class _242_validAnagram {
             return false;
         }
         for (int i = 0; i < s.length(); i++) {
-            alphabet[s.charAt(i)-'a']++;
+            alphabet[s.charAt(i) - 'a']++;
         }
         for (int i = 0; i < t.length(); i++) {
-            alphabet[t.charAt(i)-'a']--;
+            alphabet[t.charAt(i) - 'a']--;
         }
 
         for (int i : alphabet) {
-            if(i!=0){
+            if (i != 0) {
                 return false;
             }
         }
