@@ -40,7 +40,7 @@ public class _208_implementTrie {
 }
 
 class TrieNode{
-    private final Map<Character,TrieNode> children = new HashMap<>();
+    private final Map<Character, TrieNode> children = new HashMap<>();
 
     public boolean isEnd = false;
 
@@ -98,4 +98,65 @@ class Trie {
 
         return true;
     }
+}
+
+
+/**
+ * 使用 数组实现
+ */
+class Trie2 {
+
+
+    TrieNode2 root = new TrieNode2();
+
+    /** Initialize your data structure here. */
+    public Trie2() {
+
+    }
+
+    /** Inserts a word into the trie. */
+    public void insert(String word) {
+        TrieNode2 curr = root;
+        for (char ch : word.toCharArray()) {
+            if(curr.children[ch - 'a'] != null){
+                curr = curr.children[ch - 'a'];
+            }else{
+                curr.children[ch - 'a'] = new TrieNode2();
+            }
+        }
+        curr.isEnd = true;
+    }
+
+    /** Returns if the word is in the trie. */
+    public boolean search(String word) {
+        TrieNode2 curr = root;
+        for (char ch : word.toCharArray()) {
+            curr = curr.children[ch - 'a'];
+            if (curr == null) {
+                return false;
+            }
+        }
+        return curr.isEnd;
+    }
+
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    public boolean startsWith(String prefix) {
+        TrieNode2 curr = root;
+        for (char c : prefix.toCharArray()) {
+            curr = curr.children[c - 'a'];
+            if (curr == null) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+class TrieNode2{
+    /** 因为有26个字符 */
+    public TrieNode2[] children = new TrieNode2[26];
+
+    public boolean isEnd = false;
+
+
 }
