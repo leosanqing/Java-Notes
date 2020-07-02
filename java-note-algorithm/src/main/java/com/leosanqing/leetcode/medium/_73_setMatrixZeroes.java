@@ -44,8 +44,9 @@ class _73_setMatrixZeroes {
         // 遍历集合，把他们变成0
         for (int i = rows - 1; i >= 0; i--) {
             for (int j = cols - 1; j >= 1; j--) {
-                if (matrix[0][j] == 0 || matrix[i][0] == 0)
+                if (matrix[0][j] == 0 || matrix[i][0] == 0) {
                     matrix[i][j] = 0;
+                }
             }
 
             if (col0 == 0) {
