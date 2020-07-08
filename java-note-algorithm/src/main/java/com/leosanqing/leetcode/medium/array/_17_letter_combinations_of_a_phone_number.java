@@ -24,9 +24,13 @@ public class _17_letter_combinations_of_a_phone_number {
     }
 
     public static List<String> letterCombinations(String digits) {
+        List<String> list = new LinkedList<>();
+        if(digits == null || "".equals(digits)){
+            return list;
+        }
         char[] charArray = digits.toCharArray();
 
-        List<String> list = new LinkedList<>();
+
         char[][] map = {
                 {},
                 {},
