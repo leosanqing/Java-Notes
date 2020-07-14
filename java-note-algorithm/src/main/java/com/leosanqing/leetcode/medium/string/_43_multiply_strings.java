@@ -21,10 +21,16 @@ package com.leosanqing.leetcode.medium.string;
 public class _43_multiply_strings {
     public static void main(String[] args) {
 
-        System.out.println(multiply("123", "123").equals(String.valueOf(123 * 123)));
+        System.out.println(multiply("999", "999").equals(String.valueOf(999 * 999)));
 
     }
 
+    /**
+     * 我们做乘法也是这样做
+     * @param num1
+     * @param num2
+     * @return
+     */
     public static String multiply(String num1, String num2) {
 
         int m = num1.length();
@@ -39,7 +45,7 @@ public class _43_multiply_strings {
 
                 int sum = temp + result[p2];
 
-                result[p1] = sum / 10;
+                result[p1] += sum / 10;
                 result[p2] = sum % 10;
 
             }
