@@ -26,29 +26,30 @@ import java.util.List;
 public class _96_unique_binary_search_trees {
 
     public static void main(String[] args) {
-        generateTrees(8);
+        generateTrees(3);
     }
 
 
     /**
-     * 解释  ：https://leetcode.com/problems/unique-binary-search-trees/discuss/31666/DP-Solution-in-6-lines-with-explanation.-F(i-n)-G(i-1)-*-G(n-i)
+     * 解释  ：https://leetcode.com/problems/unique-binary-search-trees/discuss/31666/DP-Solution-in-6-lines-with
+     * -explanation.-F(i-n)-G(i-1)-*-G(n-i)
+     *
      * @param n
      * @return
      */
     public static int generateTrees(int n) {
-        int[] res = new int[n+1];
+        int[] res = new int[n + 1];
 
         res[0] = res[1] = 1;
 
         for (int i = 2; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
-                res[i] += res[j-1] * res[i-j];
+                res[i] += res[j - 1] * res[i - j];
             }
         }
 
         return res[n];
     }
-
 
 
 }
