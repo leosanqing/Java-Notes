@@ -1,4 +1,4 @@
-package com.leosanqing.leetcode.medium.list;
+package com.leosanqing.leetcode.medium.array;
 
 /**
  * @Author: rtliu
@@ -43,12 +43,15 @@ public class _122_best_time_to_buy_and_sell_stockII {
         int profit = 0;
         int buy = prices[0];
         for (int i = 1; i < prices.length; i++) {
+            // 只要 后面的大于前面的就继续往后，
             if (prices[i] > prices[i - 1]) {
+                // 如果是最后一个 如[1,2,3,4,5]，当他到5的时候，就要卖出了  不然就是0
                 if (i == prices.length - 1) {
                     profit += prices[i] - buy;
                 }
                 continue;
             }
+            // 不然就 计算前面的利润  如 [1,2,5,3] 当我们 到 3 的时候，我们就要计算 5-1 的利润
             profit += prices[i - 1] - buy;
             buy = prices[i];
         }

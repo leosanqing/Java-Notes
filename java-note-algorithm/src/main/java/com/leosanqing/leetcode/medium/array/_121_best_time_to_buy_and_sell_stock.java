@@ -1,4 +1,4 @@
-package com.leosanqing.leetcode.medium.list;
+package com.leosanqing.leetcode.medium.array;
 
 /**
  * @Author: rtliu
