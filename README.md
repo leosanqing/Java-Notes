@@ -6,17 +6,43 @@
 
 
 
-最近没有更这个模块了，不是去偷懒了。我搞了个springboot 的电商项目。从单体一步步往上升级，到集群到分布式。现在已经完成了三个版本，微服务版本正在进行，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
-
-Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个
+Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线程，剑指offer题解，设计模式。然后根据面试的重点，又将很多从里面抽出，专门整了个面试的分类，如果是看面试的东西的话，可以重点看这个。
 
 码字不易，点个star吧。
 
-最近在忙着看算法，刷了 leetcode，如果你现在还是学生，请一定一定珍惜你的校招应届生身份，这个非常值钱。并且一定一定要好好看算法数据结构这些基础，真的非常非常重要。**这是过来人对你的最宝贵的建议**
+
+
+现在整个 repo 太乱了，等把项目弄差不多了会把这个 repo 重构一下，包括命名风格、分类等问题。这个是很久前创建的，当时没规划好
+
+
+
+| [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
+
+
+
+## 
+
+## 关于项目
+
+搞了个 SpringBoot 的电商项目。从单体一步步往上升级，到集群到分布式。现在已经完成了三个版本，微服务版本正在进行，可以直接下载经过简单的配置就可以部署，主要是想通过这个学习下互联网在部署的时候都会用到哪些技术，[有需要的可以看看，如果入门也可以作为选择](https://github.com/leosanqing/food-shop)。
+
+目前我在根据最近学到的一些东西改造项目，优化代码风格。可以有兴趣可以看下历程
+
+下一阶段准备增加 单元测试，规范化开发
+
+## 关于算法
+
+前一段时间在忙着看算法，刷了 leetcode，如果你现在还是学生，请一定一定珍惜你的校招应届生身份，这个非常值钱。并且一定一定要好好看算法数据结构这些基础，真的非常非常重要。**这是过来人对你的最宝贵的建议**
 
 如果你在刷算法，一开始不需要搞太明白原因，简单了解下思路即可，因为等你刷到100道题，真的可以说其义自见。你会发现一般的算法就那几种套路，递归，动态规划，用的最多。如果你不相信我说的也很正常，因为我之前也不相信别人这样说。但是我刷了100道左右之后就摸出了一般解法的套路。如果你刷的痛苦，也很正常，因为这个真的不简单，但是有门槛的东西不才是好东西吗？请坚持下去
 
 以上 是我最近对大家的一部分建议，希望大家都能找到满意的工作。我也会努力进大厂
+
+
+
+## 关于文章
 
 这边是最近更的几篇文章
 
@@ -28,9 +54,15 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 - [ELK、Kafka日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka完成日志搜集)
 
-  
+
+
+## 关于书籍
 
 前段时间看了几本非技术书籍，更新了下书籍模块的书单
+
+- 人类简史(8.17更，我们人类如何从动物中脱颖而出成为地球的霸主，我们经历了三次革命——认知、农业、科学。每次都带来了哪些变革)
+
+- 动物庄园 (8.15更，《1984》作者乔治·奥威尔的另一本神作，比1984更讽刺，里面的预言基本都实现，虽然是讽刺苏联，但上面可是不敢看，因为跟他们一模一样啊，想想被禁也是理所应当) 
 
 - 上帝掷骰子吗(用非常幽默诙谐的语言描绘 物理史话。从经典力学到现在的量子力学，20世纪那个物理世界的诸神之战，最前沿的物理世界又是什么样的)
 
@@ -47,12 +79,6 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 - 童年的终结(比人类更高文明的超主，也只是更高文明的奴隶附庸。最终人类是如何进化，人类是如何灭绝。有另外一个名称，最后一个地球人)
 
   
-
-
-
-| [书籍](https://github.com/leosanqing/Java-Notes/tree/master/books) |                           面试相关                           | [JVM](https://github.com/leosanqing/Java-Notes/tree/master/JVM)(已更完) | [源码区](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode) | spring                                                       |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [设计模式](https://github.com/leosanqing/Java-Notes/tree/master/designPattern)(第一阶段完) | [算法](https://github.com/leosanqing/Java-Notes/tree/master/Algorithm)(在更) | [并发编程](https://github.com/leosanqing/Java-Notes/tree/master/ConcurrencyProgramming) | [项目](https://github.com/leosanqing/food-shop)              | [数据结构](https://github.com/leosanqing/Java-Notes/tree/master/Struct) |
 
 
 
@@ -199,7 +225,9 @@ https://github.com/leosanqing/Java-Notes/tree/master/designPattern
 
 [单例和多例的区别](https://github.com/leosanqing/Java-Notes/blob/master/spring/spring%E4%B8%AD%E5%8D%95%E4%BE%8B%E5%92%8C%E5%A4%9A%E4%BE%8B%E7%9A%84%E5%8C%BA%E5%88%AB/spring%E4%B8%AD%E5%8D%95%E4%BE%8B%E5%92%8C%E5%A4%9A%E4%BE%8B%E7%9A%84%E5%8C%BA%E5%88%AB.md)
 
-# 联系我
+# 关于我
+
+一个刚毕业的菜鸡，Java 后端开发，后期可能会干点感兴趣的，比如科普博主(毕竟看了那么多科普书籍，也该整合一下输出了) 说不定哪天就是 bilibili up主 了
 
 如果是有疑问或者建议意见想和我交流，可以添加我的微信，我会尽可能解答
 
