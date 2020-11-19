@@ -515,3 +515,74 @@ public final class zhangSanProxy extends Proxy implements Star {
 
 我们看到 他的 dance 方法，调用了`super.h.invoke(this, m3, (Object[])null);` 而那个 h 就是我们的`ZhangSanProxy`,然后就有了 我们写的 `ZhangSanProxy.invoke()`里面的内容
 
+# CGlib
+
+```java
+public class LiSi {
+    public void dance() {
+        System.out.println("我是 "+this.getClass().getName() + ", 我来唱歌");
+    }
+}
+
+
+public class LiSiProxy implements MethodInterceptor {
+
+    public static Object createProxyObject(Object o){
+        Enhancer enhancer = new Enhancer();
+        enhancer.setSuperclass(o.getClass());
+        enhancer.setCallback(new LiSiProxy());
+        return enhancer.create();
+    }
+
+    @Override
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("我是李四经纪人，演出前先收钱");
+        methodProxy.invokeSuper(o, objects);
+        return null;
+    }
+}
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        LiSi proxyObject = (LiSi)LiSiProxy.createProxyObject(new LiSi());
+        proxyObject.dance();
+    }
+}
+
+
+我是李四经纪人，演出前先收钱
+我是 com.leosanqing.proxy.dynamic.cglib.LiSi$$EnhancerByCGLIB$$d5e54c2b, 我来唱歌
+```
+
+
+
+在使用 CGlib 的时候，**我们并没有 使用 Star 接口**，这也是 JDK 动态代理和 CGlib 的主要区别，
+
+
+
+# 区别
+
+1. JDK 动态代理只能代理实现了接口的类，没有实现接口的类是不能使用 JDK 动态代理的
+2. CGlib 是对类进行代理，运行时动态生成被代理类的子类 拦截父类的方法调用，所以类和方法不能声明成 final 类，不然会报错 `Exception in thread "main" java.lang.IllegalArgumentException: Cannot subclass final class com.leosanqing.proxy.dynamic.cglib.LiSi`
+
+# 结合Spring
+
+做Javaweb 项目，都是 三层结构，controller、service、dao,一层调用一层，但是我们在创建 service的时候，总是要先生成一个 ServiceInterface 然后再编写他的实现类，为什么会这样？难道不能不这样？
+
+**当然可以不这样**，不过这样子是因为 Spring 他 可以采用 CGlib 进行AOP，如果没有 CGlib，那么肯定要有 接口才行
+
+早期由于 Spring 只有 JDK的动态代理，所以必须 要写接口，然后接口实现，甚至你在 controller 层注入 的时候都不能这样写
+
+```java
+@Autowired
+private ServiceImpl servcieImpl
+```
+
+如果你这样，他会直接报错，因为他是用的是 JDK 的动态代理，你只能注入他的接口，而不能注入他的实现
+
+好在现在 Spring 引入了 CGlib，我们如果项目不大，或者不对外交互，可以少去 Service 的 interface 层。
+
+我们有一个项目就没有 interface层，直接编写他的实现类  `public class DealService extends ServiceImpl<DealMapper, Deal> `,配合Mybatis-plus 直接进行快速开发
+
