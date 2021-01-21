@@ -49,12 +49,10 @@ Java学习笔记，内容包括JVM，spring，hashMap实现源码分析，多线
 
 这边是最近更的几篇文章
 
+- [自己动手封装Starter](https://github.com/leosanqing/minio-boot-starter)
 - [如何看待年轻人崇拜马斯克](http://mp.weixin.qq.com/s?__biz=MzU0ODgzNjQ2MQ==&mid=100000457&idx=1&sn=24732e225c8ba6d63a11857d7802a136&chksm=7bb847cb4ccfcedddc771d51c2ddbd68816f06c075dfe09c8511f1e539e35c4571d943e1b2f4#rd)(马斯克传读后感)
-
 - [可排序的Map--TreeMap](https://github.com/leosanqing/Java-Notes/tree/master/SourceCode/TreeMap)
-
 - [分布式锁的实现和对比](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/%E5%88%86%E5%B8%83%E5%BC%8F%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98)
-
 - [ELK、Kafka日志搜集](https://github.com/leosanqing/food-shop/tree/master/3.0/blog/elk%2Bkafka完成日志搜集)
 
 
