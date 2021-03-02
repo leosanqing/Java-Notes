@@ -26,20 +26,21 @@ public class _14_longestCommonPrefix {
 
 
     public static void main(String[] args) {
-        String[] strings = new String[]{"aa","a"};
+        String[] strings = new String[]{"aa", "a"};
 
         System.out.println(longestCommonPrefix(strings));
     }
+
     public static String longestCommonPrefix(String[] strs) {
-        if(strs == null ||strs.length == 0){
+        if (strs == null || strs.length == 0) {
             return "";
         }
 
         String pre = strs[0];
         for (int i = 1; i < strs.length; i++) {
             // 每次减去一个字符，找最长的公共前缀
-            while(strs[i].indexOf(pre) != 0){
-                pre = pre.substring(0,pre.length()-1);
+            while (strs[i].indexOf(pre) != 0) {
+                pre = pre.substring(0, pre.length() - 1);
             }
         }
 

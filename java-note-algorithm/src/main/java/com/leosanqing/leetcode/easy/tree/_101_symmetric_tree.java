@@ -42,7 +42,10 @@ public class _101_symmetric_tree {
             return false;
         }
 
-        return backTrace(left.left, right.right) && backTrace(left.right, right.left);
+        // 对比最外侧
+        return backTrace(left.left, right.right)
+                // 对比最内侧
+                && backTrace(left.right, right.left);
     }
 
 

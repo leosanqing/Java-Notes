@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.easy.list;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,27 +19,23 @@ import java.util.List;
  */
 public class _118_pascals_triangle {
     public static void main(String[] args) {
-        generate(5);
+        System.out.println(JSON.toJSONString(generate(5)));
     }
     public static List<List<Integer>> generate(int numRows) {
-
         List<List<Integer>> answer = new ArrayList<>();
-
 
         for (int i = 1; i <= numRows; i++) {
             List<Integer> list = new ArrayList<>(i);
             for (int j = 0; j < i; j++) {
                 if (j == 0 || j == i - 1) {
-                    list.add(j, 1);
+                    list.add(1);
                     continue;
                 }
-
-                list.add(j, answer.get(i - 2).get(j - 1) + answer.get(i - 2).get(j));
-
+                list.add(answer.get(i - 2).get(j - 1) + answer.get(i - 2).get(j));
             }
-            answer.add(new ArrayList<>(list));
+            answer.add(list);
         }
-        return answer;
 
+        return answer;
     }
 }

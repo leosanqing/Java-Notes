@@ -15,46 +15,52 @@ public class _21_merge_two_sorted_lists {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(4);
-        ListNode node2 = new ListNode(2,node1);
-        ListNode node3 = new ListNode(1,node2);
+        ListNode node2 = new ListNode(2, node1);
+        ListNode node3 = new ListNode(1, node2);
         ListNode node4 = new ListNode(4);
-        ListNode node5 = new ListNode(3,node4);
-        ListNode node6 = new ListNode(1,node5);
+        ListNode node5 = new ListNode(3, node4);
+        ListNode node6 = new ListNode(1, node5);
 
-        System.out.println(mergeTwoLists(node3,node6));
+        System.out.println(mergeTwoLists(node3, node6));
     }
-
+    
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
+        // 先处理极限情况
         if (l1 == null && l2 == null) {
             return new ListNode();
-        } else if (l1 == null) {
+        }
+        if (l1 == null) {
             return l2;
-        } else if (l2 == null) {
+        }
+        if (l2 == null) {
             return l1;
         }
 
+        // 放一个虚拟的头，用来预防各种极限值，很多解法都会使用这种方式
         ListNode newList = new ListNode();
         ListNode fakeHead = newList;
-        ListNode curr1 = l1;
-        ListNode curr2 = l2;
+        ListNode p1 = l1;
+        ListNode p2 = l2;
 
-        while (curr1 != null && curr2 != null) {
-            if (curr1.val <= curr2.val) {
-                newList.next = curr1;
-                curr1 = curr1.next;
-            }else {
-                newList.next = curr2;
-                curr2 = curr2.next;
+        while (p1 != null && p2 != null) {
+            if (p1.val <= p2.val) {
+                newList.next = p1;
+                p1 = p1.next;
+            } else {
+                newList.next = p2;
+                p2 = p2.next;
             }
             newList = newList.next;
         }
 
-        if(curr1 != null){
-            newList.next = curr1;
+        // 如果还有剩的
+        if (p1 != null) {
+            newList.next = p1;
         }
-        if(curr2 != null){
-            newList.next = curr2;
+
+        if (p2 != null) {
+            newList.next = p2;
         }
 
         return fakeHead.next;

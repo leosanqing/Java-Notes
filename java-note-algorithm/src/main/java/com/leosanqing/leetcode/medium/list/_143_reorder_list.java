@@ -1,9 +1,5 @@
 package com.leosanqing.leetcode.medium.list;
 
-import com.sun.org.apache.regexp.internal.RE;
-
-import java.util.List;
-
 /**
  * @Author: rtliu
  * @Date: 2020/8/4 下午5:03
