@@ -49,7 +49,6 @@ public class _33_search_in_rotated_sorted_array {
             return -1;
         }
 
-
         int left = 0, right = nums.length - 1;
         while (left <= right) {
             int mid = left + (right - left) / 2;

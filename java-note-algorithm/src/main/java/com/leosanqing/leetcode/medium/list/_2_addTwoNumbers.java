@@ -29,45 +29,42 @@ public class _2_addTwoNumbers {
         ListNode node5 = new ListNode(1, node4);
         ListNode node6 = new ListNode(3, node5);
 
-        _2_addTwoNumbers addTwoNumbers = new _2_addTwoNumbers();
-        addTwoNumbers.addTwoNumbers(node3, node6);
+        ListNode listNode1 = addTwoNumbers(node3, node6);
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode curr1 = l1;
-        ListNode curr2 = l2;
-        // 新建一个链表
-        ListNode result = new ListNode();
-        ListNode curr = result;
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-        int sum = 0;
-        // 进位
+        ListNode cur1 = l1;
+        ListNode cur2 = l2;
+
+        ListNode head = new ListNode();
+        ListNode cur = head;
+
         int carry = 0;
-        while (curr1 != null || curr2 != null) {
-            // 如果链1 和 链2 没有位数了
-            if (curr1 == null) {
-                curr1 = new ListNode(0);
+        // 定义在这里不需要新建对象
+        int sum;
+
+        while (cur1 != null || cur2 != null) {
+            if (cur1 == null) {
+                cur1 = new ListNode(0);
             }
-            if (curr2 == null) {
-                curr2 = new ListNode(0);
+            if (cur2 == null) {
+                cur2 = new ListNode(0);
             }
 
-            sum = curr1.val + curr2.val + carry;
+            sum = carry + cur1.val + cur2.val;
             carry = sum / 10;
+            cur.next = new ListNode(sum % 10);
 
-            curr.next = new ListNode(sum % 10);
-            curr = curr.next;
-
-            curr1 = curr1.next;
-            curr2 = curr2.next;
+            cur = cur.next;
+            cur1 = cur1.next;
+            cur2 = cur2.next;
         }
 
-        // 如果最高位加起来大于10，就需要新来一个节点
         if (carry != 0) {
-            curr.next = new ListNode(1);
+            cur.next = new ListNode(1);
         }
-        return result.next;
-
+        return head.next;
     }
 }
 

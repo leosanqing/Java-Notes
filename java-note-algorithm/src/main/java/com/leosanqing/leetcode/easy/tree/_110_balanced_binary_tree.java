@@ -29,9 +29,10 @@ import com.leosanqing.leetcode.medium.tree.TreeNode;
  * `                4   4
  * @Version: 1.0
  */
-public class _110_balanced_binary_tree {
+public class                               _110_balanced_binary_tree {
 
     private static boolean result = true;
+
     public static void main(String[] args) {
         TreeNode treeNode = new TreeNode(1);
         treeNode.left = new TreeNode(2);
@@ -50,6 +51,7 @@ public class _110_balanced_binary_tree {
         treeNode.left.left.left.right = new TreeNode(4);
         System.out.println(isBalanced(treeNode));
     }
+
     public static boolean isBalanced(TreeNode root) {
         result = true;
         backTrace(root);
@@ -58,15 +60,15 @@ public class _110_balanced_binary_tree {
 
     private static int backTrace(TreeNode root) {
         if (root == null) {
-           return 0;
+            return 0;
         }
-        int left =  backTrace(root.left);
+        int left = backTrace(root.left);
         int right = backTrace(root.right);
 
-        if(Math.abs(left-right)>1){
+        if (Math.abs(left - right) > 1) {
             result = false;
         }
 
-        return 1+Math.max(left,right);
+        return 1 + Math.max(left, right);
     }
 }

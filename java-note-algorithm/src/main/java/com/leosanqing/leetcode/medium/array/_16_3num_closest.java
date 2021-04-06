@@ -21,14 +21,14 @@ import java.util.Arrays;
 public class _16_3num_closest {
     public static void main(String[] args) {
 
-        int[] ints = {
-                1, 2, 4, 8, 16, 32, 64, 128};
-        System.out.println(threeSumClosest(ints,82));
+        int[] ints = {1, 2, 4, 8, 16, 32, 64, 128};
+        System.out.println(threeSumClosest(ints, 82));
     }
 
     /**
      * 时间复杂度O(n²)
      * 设置两个游标，然后进行遍历
+     *
      * @param nums
      * @param target
      * @return
@@ -41,7 +41,7 @@ public class _16_3num_closest {
         for (int i = 0; i < nums.length; i++) {
 
             // start 可以跳过之前的。因为之前的已经比较过
-            int start = i+1, end = nums.length - 1;
+            int start = i + 1, end = nums.length - 1;
 
             while (start < end) {
                 sum = nums[i] + nums[start] + nums[end];
@@ -51,7 +51,7 @@ public class _16_3num_closest {
                 } else {
                     start++;
                 }
-                if (Math.abs(result - target) > Math.abs(sum - target)){
+                if (Math.abs(result - target) > Math.abs(sum - target)) {
                     result = sum;
                 }
             }

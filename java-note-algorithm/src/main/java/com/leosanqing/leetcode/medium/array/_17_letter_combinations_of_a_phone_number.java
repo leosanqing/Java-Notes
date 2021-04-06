@@ -19,17 +19,15 @@ import java.util.List;
 public class _17_letter_combinations_of_a_phone_number {
 
     public static void main(String[] args) {
-
         System.out.println(letterCombinations("5465768"));
     }
 
     public static List<String> letterCombinations(String digits) {
         List<String> list = new LinkedList<>();
-        if(digits == null || "".equals(digits)){
+        if (digits == null || "".equals(digits)) {
             return list;
         }
         char[] charArray = digits.toCharArray();
-
 
         char[][] map = {
                 {},
@@ -44,26 +42,22 @@ public class _17_letter_combinations_of_a_phone_number {
                 {'w', 'x', 'y', 'z'},
         };
 
-        backtrack(charArray, list, map, new StringBuilder(), 0);
+        backtrace(charArray, list, map, new StringBuilder(), 0);
         return list;
-
     }
 
-
-    private static void backtrack(char[] digits, List<String> list, char[][] map, StringBuilder sb, int offset) {
+    private static void backtrace(char[] digits, List<String> list, char[][] map, StringBuilder sb, int offset) {
         if (offset == digits.length) {
             list.add(sb.toString());
             return;
         }
-
-        // 获得 map 的索引
+        // 获取当前数字
         int index = digits[offset] - '0';
-        // 遍历每个按键的所有情况
+        // 穷举数字对应的所有情况
         for (int i = 0; i < map[index].length; i++) {
-            // 挨个追加值
             sb.append(map[index][i]);
-            backtrack(digits, list, map, sb, offset + 1);
-            // 删除
+            backtrace(digits, list, map, sb, offset + 1);
+            // 删除最后一个数字
             sb.deleteCharAt(sb.length() - 1);
         }
     }

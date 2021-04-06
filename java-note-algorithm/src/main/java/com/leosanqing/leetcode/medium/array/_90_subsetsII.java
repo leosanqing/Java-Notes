@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.medium.array;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +22,8 @@ import java.util.List;
 public class _90_subsetsII {
 
     public static void main(String[] args) {
-        subsetsWithDup(new int[]{1, 2, 2});
+
+        System.out.println(JSON.toJSONString(subsetsWithDup(new int[]{1, 2, 2})));
     }
 
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
@@ -41,12 +44,7 @@ public class _90_subsetsII {
     private static void backTrace(List<List<Integer>> answer, List<Integer> list, int[] nums, int position, int max) {
 
         if (list.size() == max) {
-
             answer.add(new ArrayList<>(list));
-
-//            if(!answer.contains(new ArrayList<>(list))){
-//            }
-
             return;
         }
 
@@ -60,6 +58,5 @@ public class _90_subsetsII {
         }
 
     }
-
 
 }
