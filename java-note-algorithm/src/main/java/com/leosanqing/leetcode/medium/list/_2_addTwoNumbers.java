@@ -52,7 +52,9 @@ public class _2_addTwoNumbers {
                 cur2 = new ListNode(0);
             }
 
+            // 计算位数之和
             sum = carry + cur1.val + cur2.val;
+            // 是否大于0
             carry = sum / 10;
             cur.next = new ListNode(sum % 10);
 
