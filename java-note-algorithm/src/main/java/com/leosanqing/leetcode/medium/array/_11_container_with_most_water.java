@@ -21,18 +21,32 @@ package com.leosanqing.leetcode.medium.array;
  * `    Output: 49
  * @Version: 1.0
  */
-public class _11_containerWithMostWater {
+public class _11_container_with_most_water {
 
+    /**
+     * 这个很简单，也是很经典的问题
+     * 设置两个游标，然后比较两个游标上的容器壁的高度，盛水以矮的为主
+     * 然后移动游标，那边矮就移动哪边
+     *
+     * @param height
+     * @return
+     */
     public int maxArea(int[] height) {
-        int i = 0, j = height.length - 1;
+        int left = 0;
+        int right = height.length - 1;
+
         int max = 0;
-        while (i < j) {
-            if (height[i] < height[j]) {
-                max = Math.max(max, (j - i) * height[i++]);
+        while (left != right) {
+            if (height[left] > height[right]) {
+                max = Math.max(height[right] * (right - left), max);
+                right--;
             } else {
-                max = Math.max(max, (j - i) * height[j--]);
+                max = Math.max(height[left] * (right - left), max);
+                left++;
             }
         }
         return max;
     }
+
+
 }

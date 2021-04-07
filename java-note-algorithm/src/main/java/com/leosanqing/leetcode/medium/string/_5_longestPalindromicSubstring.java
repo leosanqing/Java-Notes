@@ -20,42 +20,32 @@ package com.leosanqing.leetcode.medium.string;
  */
 public class _5_longestPalindromicSubstring {
     public static void main(String[] args) {
-        _5_longestPalindromicSubstring substring = new _5_longestPalindromicSubstring();
         String s = "abasasaiug";
-        System.out.println(substring.longestPalindrome(s));
+        System.out.println(longestPalindrome(s));
     }
 
-    private String longestPalindrome(String s) {
+    public static String longestPalindrome(String s) {
         if (s.length() < 2) {
             return s;
         }
-        String maxStr = "";
-
+        String longStr = "";
 
         for (int i = 0; i < s.length(); i++) {
-            // s1 表示 sas 这种 ，s2 表示 saas 这种
-            String s1 = extend(s, i, i), s2 = extend(s, i, i + 1);
-            if (maxStr.length() < s1.length()) {
-                maxStr = s1;
+            String s1 = findStr(s, i, i);
+            String s2 = findStr(s, i, i + 1);
+
+            if (s1.length() > longStr.length()) {
+                longStr = s1;
             }
-            if (maxStr.length() < s2.length()) {
-                maxStr = s2;
+            if (s2.length() > longStr.length()) {
+                longStr = s2;
             }
         }
 
-
-        return maxStr;
+        return longStr;
     }
 
-
-    /**
-     * 以 i j 为中心，对称找回文
-     * @param s 输入的字符串
-     * @param i
-     * @param j
-     * @return
-     */
-    private String extend(String s, int i, int j) {
+    private static String findStr(String s, int i, int j) {
         for (; i >= 0 && j < s.length(); i--, j++) {
             if (s.charAt(i) != s.charAt(j)) {
                 break;
