@@ -1,6 +1,8 @@
 package com.leosanqing.leetcode.medium.array;
 
-import java.util.LinkedList;
+import com.alibaba.fastjson.JSON;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,46 +20,45 @@ import java.util.List;
  */
 public class _17_letter_combinations_of_a_phone_number {
 
+    static char[][] num = {
+            {},
+            {},
+            {'a', 'b', 'c'},
+            {'d', 'e', 'f'},
+            {'g', 'h', 'i'},
+            {'j', 'k', 'l'},
+            {'m', 'n', 'o'},
+            {'p', 'q', 'r', 's'},
+            {'t', 'u', 'v'},
+            {'w', 'x', 'y', 'z'}
+    };
+
     public static void main(String[] args) {
-        System.out.println(letterCombinations("5465768"));
+        System.out.println(JSON.toJSONString(letterCombinations("5465768")));
     }
 
     public static List<String> letterCombinations(String digits) {
-        List<String> list = new LinkedList<>();
-        if (digits == null || "".equals(digits)) {
-            return list;
+        if (digits.length() == 0) {
+            return new ArrayList<>();
         }
-        char[] charArray = digits.toCharArray();
 
-        char[][] map = {
-                {},
-                {},
-                {'a', 'b', 'c'},
-                {'d', 'e', 'f'},
-                {'g', 'h', 'i'},
-                {'j', 'k', 'l'},
-                {'m', 'n', 'o'},
-                {'p', 'q', 'r', 's'},
-                {'t', 'u', 'v'},
-                {'w', 'x', 'y', 'z'},
-        };
 
-        backtrace(charArray, list, map, new StringBuilder(), 0);
-        return list;
+        List<String> answer = new ArrayList<>();
+
+        backtrace(answer, 0, new StringBuilder(), digits);
+
+        return answer;
     }
 
-    private static void backtrace(char[] digits, List<String> list, char[][] map, StringBuilder sb, int offset) {
-        if (offset == digits.length) {
-            list.add(sb.toString());
+    private static void backtrace(List<String> answer, int position, StringBuilder sb, String digits) {
+        if (sb.length() == digits.length()) {
+            answer.add(new String(sb));
             return;
         }
-        // 获取当前数字
-        int index = digits[offset] - '0';
-        // 穷举数字对应的所有情况
-        for (int i = 0; i < map[index].length; i++) {
-            sb.append(map[index][i]);
-            backtrace(digits, list, map, sb, offset + 1);
-            // 删除最后一个数字
+
+        for (int j = 0; j < num[digits.charAt(position) - '0'].length; j++) {
+            sb.append(num[digits.charAt(position) - '0'][j]);
+            backtrace(answer, position + 1, sb, digits);
             sb.deleteCharAt(sb.length() - 1);
         }
     }
