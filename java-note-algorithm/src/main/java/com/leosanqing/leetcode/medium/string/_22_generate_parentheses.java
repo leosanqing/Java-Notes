@@ -31,31 +31,30 @@ public class _22_generate_parentheses {
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();
 
-
-        StringBuilder sb = new StringBuilder();
-
-        helper(list, sb, 0, 0, n);
+        backtrace(list, new StringBuilder(), 0, 0, n);
 
         return list;
     }
 
 
-    private static void helper(List<String> list, StringBuilder sb, int open, int close, int max) {
-        if (open == max && close == max) {
-            list.add(sb.toString());
+    private static void backtrace(List<String> result, StringBuilder sb, int left, int right, int max) {
+        if (left == max && right == max) {
+            result.add(sb.toString());
             return;
         }
-        if (open < max) {
+
+        if (left <= max) {
             sb.append("(");
-            helper(list, sb, open + 1, close, max);
-            sb.setLength(sb.length() - 1);
+            backtrace(result, sb, left + 1, right, max);
+            sb.deleteCharAt(sb.length() - 1);
         }
 
-        // 注意这里，close < open ，这样就避免了 出现类似  ()))(( 的情况
-        if (close < open ) {
+        // 避免出现 ())这种情况
+        if (right < left) {
             sb.append(")");
-            helper(list, sb, open, close + 1, max);
-            sb.setLength(sb.length() - 1);
+            backtrace(result, sb, left, right + 1, max);
+            sb.deleteCharAt(sb.length() - 1);
         }
+
     }
 }

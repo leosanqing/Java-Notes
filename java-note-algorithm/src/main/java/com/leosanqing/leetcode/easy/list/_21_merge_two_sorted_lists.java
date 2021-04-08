@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.easy.list;
 
+import com.leosanqing.leetcode.medium.list.ListNode;
+
 /**
  * @Author: rtliu
  * @Date: 2020/7/7 下午4:46
@@ -23,7 +25,7 @@ public class _21_merge_two_sorted_lists {
 
         System.out.println(mergeTwoLists(node3, node6));
     }
-    
+
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
         // 先处理极限情况
@@ -66,21 +68,32 @@ public class _21_merge_two_sorted_lists {
         return fakeHead.next;
     }
 
+    public ListNode mergeTwoLists1(ListNode l1, ListNode l2) {
 
-    static class ListNode {
-        int val;
-        ListNode next;
+        ListNode cur = new ListNode();
+        ListNode fakeHead = cur;
+        ListNode n1 = l1;
+        ListNode n2 = l2;
 
-        ListNode() {
+        while (n1 != null && n2 != null) {
+            if (n1.val < n2.val) {
+                cur.next = n1;
+                n1 = n1.next;
+            } else {
+                cur.next = n2;
+                n2 = n2.next;
+            }
+            cur = cur.next;
+        }
+        // 如果还有剩的
+        if (n1 != null) {
+            cur.next = n1;
         }
 
-        ListNode(int val) {
-            this.val = val;
+        if (n2 != null) {
+            cur.next = n2;
         }
 
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
+        return fakeHead.next;
     }
 }
