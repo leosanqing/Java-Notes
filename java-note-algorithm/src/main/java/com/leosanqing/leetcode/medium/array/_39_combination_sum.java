@@ -44,26 +44,29 @@ public class _39_combination_sum {
      * @return
      */
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
-
         List<List<Integer>> answer = new ArrayList<>();
+
+        // 先排序
         Arrays.sort(candidates);
-        backTrace(answer, new ArrayList<>(), candidates, 0, target);
+
+        backtrace(answer, candidates, target, new ArrayList<>(), 0);
 
         return answer;
     }
 
-
-    private static void backTrace(List<List<Integer>> answer, List<Integer> list, int[] candidates, int position, int remain) {
-        if (remain < 0) {
+    private static void backtrace(List<List<Integer>> answer, int[] candidates, int target, List<Integer> list, int position) {
+        if (target < 0) {
             return;
-        } else if (remain == 0) {
+        }
+
+        if (target == 0) {
             answer.add(new ArrayList<>(list));
             return;
         }
 
         for (int i = position; i < candidates.length; i++) {
             list.add(candidates[i]);
-            backTrace(answer, list, candidates, i, remain - candidates[i]);
+            backtrace(answer, candidates, target - candidates[i], list, i);
             list.remove(list.size() - 1);
         }
     }

@@ -49,24 +49,24 @@ public class _48_rotate_image {
 
     /**
      * 分成两步进行旋转
-     *
+     * <p>
      * 1 2 3
      * 4 5 6
      * 7 8 9
-     *
+     * <p>
      * 1 4 7
      * 2 5 8
      * 3 6 9
-     *
+     * <p>
      * 7 4 1
      * 8 5 2
      * 9 6 3
-     *
      *
      * @param matrix
      */
     public static void rotate(int[][] matrix) {
         int temp;
+
         for (int i = 0; i < matrix.length; i++) {
             for (int j = i; j < matrix[0].length; j++) {
                 temp = matrix[i][j];
@@ -80,6 +80,29 @@ public class _48_rotate_image {
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[i][matrix.length - 1 - j];
                 matrix[i][matrix.length - 1 - j] = temp;
+            }
+        }
+    }
+
+
+    public static void rotate1(int[][] matrix) {
+        int temp;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = i; j < matrix[0].length; j++) {
+                if (i == j) {
+                    continue;
+                }
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length / 2; j++) {
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[i][matrix[0].length - j - 1];
+                matrix[i][matrix[0].length - j - 1] = temp;
             }
         }
     }

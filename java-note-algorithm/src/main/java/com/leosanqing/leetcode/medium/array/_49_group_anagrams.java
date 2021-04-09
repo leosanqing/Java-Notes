@@ -25,6 +25,7 @@ public class _49_group_anagrams {
         String[] strings = {"eat", "tea", "tan", "ate", "nat", "bat"};
         System.out.println(groupAnagrams(strings));
     }
+
     public static List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> answer = new ArrayList<>();
 
@@ -43,7 +44,7 @@ public class _49_group_anagrams {
 
             List<String> list = map.getOrDefault(s, new ArrayList<>());
             list.add(str);
-            map.put(s,list);
+            map.put(s, list);
 
         }
         return new ArrayList<>(map.values());

@@ -53,16 +53,14 @@ public class _55_jump_game {
      * @return
      */
     public static boolean canJump(int[] nums) {
-        int reachable = 0;
-        for (int i = 0; i < nums.length; ++i) {
-            // 当 i 大于 reachable 说明这个地方不可达，那肯定有问题
-            if (i > reachable) {
+        int max = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (i > max) {
                 return false;
             }
-            reachable = Math.max(reachable, i + nums[i]);
+            // 算出能到达的最远距离
+            max = Math.max(max, i + nums[i]);
         }
         return true;
     }
-
-
 }
