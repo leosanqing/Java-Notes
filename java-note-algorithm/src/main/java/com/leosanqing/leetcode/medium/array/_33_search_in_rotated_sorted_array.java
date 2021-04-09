@@ -89,20 +89,20 @@ public class _33_search_in_rotated_sorted_array {
             int mid = left + (right - left) / 2;
 
             // 说明 mid 和 target 在同一侧
-            if ((nums[mid] - nums[nums.length-1]) * (target - nums[nums.length-1]) > 0) {
+            if ((nums[mid] - nums[nums.length - 1]) * (target - nums[nums.length - 1]) > 0) {
                 if (target > nums[mid]) {
                     left = mid + 1;
                 } else {
                     right = mid;
                 }
-            }else if(target - nums[nums.length-1] > 0){
+            } else if (target - nums[nums.length - 1] > 0) {
                 // target 在左侧
                 right = mid;
-            }else{
-                left = mid+1;
+            } else {
+                left = mid + 1;
             }
         }
-        if(nums[left] == target){
+        if (nums[left] == target) {
             return left;
         }
 
