@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.medium.list;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,42 +19,34 @@ import java.util.List;
  */
 public class _78_subsets {
     public static void main(String[] args) {
-        subsets(new int[]{1,2,3});
-    }
-
-    public static List<List<Integer>> subsets(int[] nums) {
-
-        List<List<Integer>> answer = new ArrayList<>();
-        answer.add(new ArrayList<>());
-
-        if (nums.length == 0) {
-            return answer;
-        }
-        for (int i = 1; i <= nums.length; i++) {
-            backTrace(answer, new ArrayList<>(), nums, i, 0);
-        }
-
-        return answer;
-
+        System.out.println(JSON.toJSONString(subsets(new int[]{1, 2, 3})));
     }
 
     /**
-     * 这个我已经不想说了，太多一样的解法了
-     * @param answer
-     * @param list
+     * 这个真的太经典了，回溯的经典题型，你会发现有很多很多这种的题
+     *
      * @param nums
-     * @param max
-     * @param position
+     * @return
      */
-    private static void backTrace(List<List<Integer>> answer, List<Integer> list, int[] nums, int max, int position) {
+    public static List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> answer = new ArrayList<>();
+
+        for (int i = 0; i <= nums.length; i++) {
+            backtrace(answer, new ArrayList<>(), i, nums, 0);
+        }
+
+        return answer;
+    }
+
+    private static void backtrace(List<List<Integer>> answer, List<Integer> list, int max, int[] nums, int position) {
         if (list.size() == max) {
             answer.add(new ArrayList<>(list));
             return;
         }
+
         for (int i = position; i < nums.length; i++) {
             list.add(nums[i]);
-
-            backTrace(answer, list, nums, max, i + 1);
+            backtrace(answer, list, max, nums, i + 1);
             list.remove(list.size() - 1);
         }
     }
