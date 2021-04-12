@@ -24,17 +24,47 @@ public class _75_sort_colors {
         int n2 = -1, n1 = -1, n0 = -1;
 
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == 0){
+            if (nums[i] == 0) {
                 nums[++n2] = 2;
                 nums[++n1] = 1;
                 nums[++n0] = 0;
-            }else if(nums[i] == 1){
+            } else if (nums[i] == 1) {
                 nums[++n2] = 2;
                 nums[++n1] = 1;
-            }else if(nums[i] == 2){
+            } else if (nums[i] == 2) {
                 nums[++n2] = 2;
             }
 
+        }
+    }
+
+
+    /**
+     * 使用两个指针，p1指向0，p2指向2
+     * 然后遍历，找到0就和 P1上的数字交换，找到2就和p2上的数字交换
+     *
+     * 但是这个时候有一个情况是，2交换后仍可能是2
+     * 参考 0 2 1 2 1 0 2 自己手动交换一下就知道，所以才有 while里面的内容
+     * @param nums
+     */
+    public static void sortColors1(int[] nums) {
+        int n1 = 0;
+        int n2 = nums.length - 1;
+
+        for (int i = 0; i <= n2; i++) {
+            // 交换过后 此时 nums[i] 可能是 0，也可能是2 ，还需要再继续交换
+            while (i <= n2 && nums[i] == 2) {
+                int temp = nums[i];
+                nums[i] = nums[n2];
+                nums[n2] = temp;
+                --n2;
+            }
+            if (nums[i] == 0) {
+                int temp = nums[i];
+                nums[i] = nums[n1];
+                nums[n1] = temp;
+                ++n1;
+            }
         }
     }
 }

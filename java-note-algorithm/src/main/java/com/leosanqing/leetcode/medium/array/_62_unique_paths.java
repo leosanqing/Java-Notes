@@ -31,36 +31,34 @@ package com.leosanqing.leetcode.medium.array;
  */
 public class _62_unique_paths {
     public static void main(String[] args) {
-        System.out.println(uniquePaths(3,3));
+        System.out.println(uniquePaths(3, 3));
+        System.out.println(uniquePaths(3, 7));
     }
 
     /**
-     * 这个解法和 64题 类似 都是使用 DP
+     * 使用动态规划，机器人只能向下或者向右，所以当前到当前坐标的可能性就是 上边坐标的可能性加上左边坐标的可能性
      *
-     * @param cols
-     * @param rows
+     * @param m
+     * @param n
      * @return
      */
-    public static int uniquePaths(int cols, int rows) {
-        int[] cur = new int[cols];
-        int[] pre = new int[cols];
+    public static int uniquePaths(int m, int n) {
+        int[] pre = new int[m];
+        int[] cur = new int[m];
 
-        // 第一行 到达每个节点只有一条道路 所以每个都设置成 1
-        for (int i = 0; i < cols; i++) {
-            pre[i] = 1;
+        for (int i = 0; i < m; i++) {
             cur[i] = 1;
+            pre[i] = 1;
         }
 
-        // 第一列 到达的路径只有从上面走的一种，所以也全是1，可以不用管，上面已经设置过
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                // 能到达的可能性就是  上边的 + 左边的 可能性
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
                 cur[j] = cur[j - 1] + pre[j];
             }
             pre = cur;
         }
 
-        return cur[cols - 1];
+        return cur[m - 1];
     }
 
 }

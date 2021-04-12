@@ -23,29 +23,32 @@ import java.util.List;
  * @Version: 1.0
  */
 public class _56_merge_intervals {
-    public int[][] merge(int[][] intervals) {
-        if (intervals.length <= 1) {
-            return intervals;
-        }
-
-        // 先进行排序，这样才能一个个进行合并
+    /**
+     * 先对给定的数组进行排列
+     * @param intervals
+     * @return
+     */
+    public static int[][] merge(int[][] intervals) {
+        // 先排序
         Arrays.sort(intervals, Comparator.comparingInt(i -> i[0]));
 
-        List<int[]> list = new ArrayList<>();
+        List<int[]> answer = new ArrayList<>();
 
-        int[] newInterval = intervals[0];
-        list.add(intervals[0]);
         for (int[] interval : intervals) {
-            if (interval[0] <= newInterval[1]) {
-                newInterval[1] = Math.max(newInterval[1], interval[1]);
+            int left = interval[0];
+            int right = interval[1];
+
+            if (answer.isEmpty()) {
+                answer.add(new int[]{left, right});
+                continue;
+            }
+
+            if (answer.get(answer.size() - 1)[1] < left) {
+                answer.add(new int[]{left, right});
             } else {
-                // 让他指向下一个
-                newInterval = interval;
-                list.add(newInterval);
+                answer.get(answer.size() - 1)[1] = Math.max(answer.get(answer.size() - 1)[1], right);
             }
         }
-
-
-        return list.toArray(new int[list.size()][]);
+        return answer.toArray(new int[answer.size()][]);
     }
 }
