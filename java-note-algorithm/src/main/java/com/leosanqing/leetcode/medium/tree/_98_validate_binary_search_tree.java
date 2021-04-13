@@ -1,7 +1,5 @@
 package com.leosanqing.leetcode.medium.tree;
 
-import java.util.Stack;
-
 /**
  * @Author: rtliu
  * @Date: 2020/7/27 上午10:31
@@ -50,9 +48,24 @@ public class _98_validate_binary_search_tree {
 
         // 左子树一定小于父节点，右子树一定大于父节点
         if ((max != null && treeNode.val >= max)
-                || (min != null && treeNode.val <= min )) {
+                || (min != null && treeNode.val <= min)) {
             return false;
         }
         return backTrace(treeNode.left, min, treeNode.val) && backTrace(treeNode.right, treeNode.val, max);
     }
+
+    private static boolean backtrace(TreeNode treeNode, Integer max, Integer min) {
+        if (treeNode == null) {
+            return true;
+        }
+
+        if (
+                (max != null && treeNode.val >= max)
+                        || (min != null && treeNode.val <= min)
+        ) {
+            return false;
+        }
+        return backtrace(treeNode.left, max, treeNode.val)&&backtrace(treeNode.right, treeNode.val, min);
+    }
+
 }

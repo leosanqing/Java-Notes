@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.medium.tree;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -33,32 +35,31 @@ public class _102_binary_tree_level_order_traversal {
         treeNode.right = new TreeNode(20);
         treeNode.right.left = new TreeNode(1);
         treeNode.right.right = new TreeNode(7);
-        levelOrder(treeNode);
+
+        System.out.println(JSON.toJSONString(levelOrder(treeNode)));
     }
 
     public static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> answer = new ArrayList<>();
 
-        backTrace(answer, 0, root);
+        backtrace(answer, 0, root);
         return answer;
     }
 
-
-    private static void backTrace(List<List<Integer>> answer, int depth, TreeNode root) {
-        if (root == null) {
+    private static void backtrace(List<List<Integer>> answer, int depth, TreeNode node) {
+        if (node == null) {
             return;
         }
 
-        if (answer.size() > depth) {
-            answer.get(depth).add(root.val);
-        } else {
+        if (depth >= answer.size()) {
             List<Integer> list = new ArrayList<>();
-            list.add(root.val);
-            answer.add(new ArrayList<>(list));
+            list.add(node.val);
+            answer.add(list);
+        } else {
+            answer.get(depth).add(node.val);
         }
 
-        backTrace(answer, depth + 1, root.left);
-        backTrace(answer, depth + 1, root.right);
-
+        backtrace(answer, depth + 1, node.left);
+        backtrace(answer, depth + 1, node.right);
     }
 }

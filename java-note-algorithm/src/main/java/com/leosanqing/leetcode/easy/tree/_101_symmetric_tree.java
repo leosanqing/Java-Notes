@@ -23,30 +23,28 @@ import com.leosanqing.leetcode.medium.tree.TreeNode;
  * @Version: 1.0
  */
 public class _101_symmetric_tree {
-    public boolean isSymmetric(TreeNode root) {
-        if(root == null){
+
+    public static boolean isSymmetric(TreeNode root) {
+        if (root == null) {
             return true;
         }
-        return backTrace(root.left,root.right);
+        return backtrace(root.left, root.right);
     }
 
-
-    private boolean backTrace(TreeNode left, TreeNode right) {
+    private static boolean backtrace(TreeNode left, TreeNode right) {
         if (left == null && right == null) {
             return true;
         }
         if (left == null || right == null) {
             return false;
         }
+
         if (left.val != right.val) {
             return false;
         }
 
-        // 对比最外侧
-        return backTrace(left.left, right.right)
-                // 对比最内侧
-                && backTrace(left.right, right.left);
+        return backtrace(left.left, right.right)
+                && backtrace(left.right, right.left);
     }
-
 
 }

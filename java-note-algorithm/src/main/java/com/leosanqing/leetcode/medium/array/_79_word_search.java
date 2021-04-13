@@ -25,7 +25,7 @@ package com.leosanqing.leetcode.medium.array;
  * @Version: 1.0
  */
 public class _79_word_search {
-    static boolean flag = false;
+
 
     public static void main(String[] args) {
 
@@ -43,48 +43,50 @@ public class _79_word_search {
 
     public static boolean exist(char[][] board, String word) {
 
-        if (board == null || board.length == 0) {
-            return false;
-        }
         boolean[][] isUsed = new boolean[board.length][board[0].length];
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                if (word.charAt(0) == board[i][j] && bfs(board, word, i, j, 0, isUsed)) {
+                if(backtrace(board, word, i, j, 0, isUsed)){
                     return true;
                 }
             }
         }
+
         return false;
     }
 
+    private static boolean backtrace(char[][] board, String word, int x, int y, int index, boolean[][] isUsed) {
 
-    private static boolean bfs(char[][] board, String word, int x, int y, int index, boolean[][] isUsed) {
-
-        if (x >= 0 && x < board.length && y >= 0 && y < board[0].length) {
-            if (isUsed[x][y]) {
-                return false;
-            }
-
-            if (word.charAt(index) == board[x][y]) {
-                isUsed[x][y] = true;
-                if (index == word.length() - 1) {
-                    return true;
-                }
-
-                if (bfs(board, word, x - 1, y, index + 1, isUsed)
-                        || bfs(board, word, x, y + 1, index + 1, isUsed)
-                        || bfs(board, word, x + 1, y, index + 1, isUsed)
-                        || bfs(board, word, x, y - 1, index + 1, isUsed)
-                ) {
-                    return true;
-                }
-
-                isUsed[x][y] = false;
-
-            }
+        // 超出边界
+        if (x > board.length - 1 || y > board[0].length - 1 || x < 0 || y < 0) {
             return false;
         }
+
+        if (isUsed[x][y]) {
+            return false;
+        }
+
+        if (board[x][y] != word.charAt(index)) {
+            return false;
+        }
+
+        isUsed[x][y] = true;
+        if (index == word.length() - 1) {
+            return true;
+        }
+
+        if (
+                backtrace(board, word, x + 1, y, index + 1, isUsed)
+                        || backtrace(board, word, x - 1, y, index + 1, isUsed)
+                        || backtrace(board, word, x, y - 1, index + 1, isUsed)
+                        || backtrace(board, word, x, y + 1, index + 1, isUsed)
+        ) {
+            return true;
+        }
+
+        isUsed[x][y] = false;
+
         return false;
     }
 

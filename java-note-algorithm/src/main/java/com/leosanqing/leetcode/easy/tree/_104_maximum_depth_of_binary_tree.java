@@ -20,39 +20,40 @@ import com.leosanqing.leetcode.medium.tree.TreeNode;
  * @Version: 1.0
  */
 public class _104_maximum_depth_of_binary_tree {
-    static int max = 0;
+
 
     public static void main(String[] args) {
-
-        max = 0;
         TreeNode treeNode = new TreeNode(3);
-//        treeNode.left = new TreeNode(9);
-//        treeNode.right = new TreeNode(20);
-//        treeNode.right.left = new TreeNode(1);
-//        treeNode.right.right = new TreeNode(7);
-        maxDepth(treeNode);
+        treeNode.left = new TreeNode(9);
+        treeNode.right = new TreeNode(20);
+        treeNode.right.left = new TreeNode(1);
+        treeNode.right.right = new TreeNode(7);
+        System.out.println(maxDepth(treeNode));
+    }
+
+    static class Num{
+        int max;
     }
 
     public static int maxDepth(TreeNode root) {
+        Num num = new Num();
+        num.max = 0;
         if (root == null) {
             return 0;
         }
-        backTrace(root, 0);
-        return max;
+        backtrace(root, 0, num);
+        return num.max;
     }
 
-    private static void backTrace(TreeNode root, int curInt) {
+    private static void backtrace(TreeNode root, int curInt, Num max) {
         if (root == null) {
             return;
         }
-        curInt++;
-        if (max < curInt) {
-            max = curInt;
-        }
-        backTrace(root.left, curInt);
-        backTrace(root.right, curInt);
 
+        max.max = Math.max(++curInt, max.max);
+
+        backtrace(root.left, curInt, max);
+        backtrace(root.right, curInt, max);
     }
-
 
 }
