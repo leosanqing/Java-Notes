@@ -1,5 +1,8 @@
 package com.leosanqing.leetcode.medium.tree;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author: rtliu
  * @Date: 2020/7/28 下午7:29
@@ -27,7 +30,7 @@ public class _105_construct_binary_tree_from_preorder_and_inorder_traversal {
         int[] inorder = {11, 2, 14, 9, 8, 3, 16, 15, 20, 22, 7};
 
 
-        TreeNode treeNode1 = backTrace(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+//        TreeNode treeNode1 = backTrace(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
 
 
         TreeNode treeNode = buildTree(preorder, inorder);
@@ -35,27 +38,37 @@ public class _105_construct_binary_tree_from_preorder_and_inorder_traversal {
 
     }
 
+    private static Map<Integer, Integer> indexMap;
+
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
-        return backTrace(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+
+        // 构造哈希映射，帮助我们快速定位根节点
+        indexMap = new HashMap<>(preorder.length * 2);
+        for (int i = 0; i < preorder.length; i++) {
+            indexMap.put(inorder[i], i);
+        }
+        return backtrace(preorder, 0, preorder.length - 1, inorder, 0, preorder.length - 1);
     }
 
-    private static TreeNode backTrace(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd) {
-        if (preStart > preorder.length - 1 || inStart > inEnd) {
+    private static TreeNode backtrace(int[] preorder, int preStart, int preEnd, int[] inorder, int inStart, int inEnd) {
+        if (preStart > preEnd) {
             return null;
         }
 
+        // 在中序遍历中定位根节点
+        int inorderRoot = indexMap.get(preorder[preStart]);
+
+        // 先把根节点建立出来
         TreeNode root = new TreeNode(preorder[preStart]);
-        // 找到 inOrder 中 的索引
-        int inIndex = 0;
+        // 得到左子树中的节点数目
+        int sizeLeftSubtree = inorderRoot - inStart;
+        // 递归地构造左子树，并连接到根节点
+        // 先序遍历中「从 左边界+1 开始的 sizeLeftSubtree」个元素就对应了中序遍历中「从 左边界 开始到 根节点定位-1」的元素
+        root.left = backtrace(preorder, preStart + 1, preStart + sizeLeftSubtree, inorder, inStart, inorderRoot - 1);
+        // 递归地构造右子树，并连接到根节点
+        // 先序遍历中「从 左边界+1+左子树节点数目 开始到 右边界」的元素就对应了中序遍历中「从 根节点定位+1 到 右边界」的元素
+        root.right = backtrace(preorder, preStart + sizeLeftSubtree + 1, preEnd, inorder, inorderRoot + 1, inEnd);
 
-        for (int i = inStart; i <= inEnd; i++) {
-            if (root.val == inorder[i]) {
-                inIndex = i;
-            }
-        }
-
-        root.left = backTrace(preorder, preStart + 1, preEnd, inorder, inStart, inIndex - 1);
-        root.right = backTrace(preorder, preStart + inIndex - inStart + 1, preEnd, inorder, inIndex + 1, inEnd);
         return root;
     }
 }
