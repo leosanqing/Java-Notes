@@ -32,20 +32,24 @@ public class _114_flatten_binary_tree_to_linked_list {
         if (root == null) {
             return;
         }
+
         TreeNode left = root.left;
         TreeNode right = root.right;
 
-        root.left = null;
+        right.left = null;
+
         flatten(left);
         flatten(right);
 
         root.right = left;
 
+        // 找到 左子树 最后一个节点，将其连接上
         TreeNode cur = root;
         while (cur.right != null) {
             cur = cur.right;
         }
         cur.right = right;
+
     }
 
 }
