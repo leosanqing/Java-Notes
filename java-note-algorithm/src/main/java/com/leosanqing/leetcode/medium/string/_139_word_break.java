@@ -35,75 +35,44 @@ import java.util.stream.Collectors;
  */
 public class _139_word_break {
 
+    static Set<String> set;
+
     public static void main(String[] args) {
         String s = "leetcode";
 
-        wordBreak(s, Arrays.asList("leet", "code"));
+        System.out.println(wordBreak(s, Arrays.asList("leet", "code")));
     }
 
     public static boolean wordBreak(String s, List<String> wordDict) {
-        return dfs(s, 0, new HashSet<>(wordDict), new HashSet<>());
+        set = new HashSet<>(wordDict);
+        return backtrace(s, 0, new HashSet<>());
 
     }
 
 
-    private static boolean backTrace(String s, int position, Set<String> wordSet, Set<Integer> set) {
-        // 如果到最后了  肯定完全匹配了，
-        // 因为这个position 是坐标，比如 上面的leetcode ，position 为 8，那么他已经完全匹配完了的，因为position为7时就已经匹配完了
+    private static boolean backtrace(String s, int position, Set<Integer> words) {
         if (position == s.length()) {
             return true;
         }
 
-        // 如果有这个坐标，那么就说明后面的试过了无效，可以直接返回
-        if (set.contains(position)) {
+        // 如果存在，则说明已经尝试过这种方法，就直接返回
+        if (words.contains(position)) {
             return false;
         }
 
         for (int i = position + 1; i <= s.length(); i++) {
-            String substring = s.substring(position, i);
-            if (!wordSet.contains(substring)) {
+            if (!set.contains(s.substring(position, i))) {
                 continue;
             }
 
-            if (backTrace(s, i, wordSet, set)){
+            if (backtrace(s, i, words)) {
                 return true;
-            }else {
-                set.add(i);
             }
 
+            words.add(i);
         }
 
-        set.add(position);
-
-        return false;
-
-    }
-
-
-    private static boolean dfs(String s, int index, Set<String> dict, Set<Integer> set) {
-        // base case
-        if (index == s.length()) {
-            return true;
-        }
-        // check memory
-        if (set.contains(index)) {
-            return false;
-        }
-        // recursion
-        for (int i = index + 1; i <= s.length(); i++) {
-            String t = s.substring(index, i);
-            if (!dict.contains(t)) {
-                continue;
-            }
-            if (dfs(s, i, dict, set)) {
-                return true;
-            } else {
-                set.add(i);
-            }
-        }
-
-
-        set.add(index);
+        words.add(position);
         return false;
     }
 }
