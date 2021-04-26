@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.easy;
 
+import com.leosanqing.leetcode.medium.list.ListNode;
+
 /**
  * @Author: rtliu
  * @Date: 2020/6/1 下午2:11
@@ -45,22 +47,5 @@ public class _203_removeLinkedListElements {
         return fakeHead.next;
     }
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-    }
 
 }

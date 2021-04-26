@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.easy;
 
+import com.leosanqing.leetcode.medium.list.ListNode;
+
 /**
  * @Author: rtliu
  * @Date: 2020/6/1 下午5:51
@@ -45,23 +47,4 @@ public class _206_reverseLinkedList {
         return pre;
     }
 
-
-
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }

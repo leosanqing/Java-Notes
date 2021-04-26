@@ -1,5 +1,7 @@
 package com.leosanqing.leetcode.easy;
 
+import com.leosanqing.leetcode.medium.list.ListNode;
+
 /**
  *` 描述：Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
  *`
@@ -29,13 +31,6 @@ package com.leosanqing.leetcode.easy;
  */
 
 public class _237_deleteNodeInLinkedList {
-    static class ListNode{
-        int val;
-        ListNode next;
-
-        public ListNode() {
-        }
-    }
 
     public static void main(String[] args) {
 

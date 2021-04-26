@@ -5,15 +5,14 @@ package com.leosanqing.leetcode.medium.list;
  * @Date: 2020/6/1 下午7:01
  * @Package: com.leosanqing.leetcode.medium
  * @Description: Reverse a linked list from position m to n. Do it in one-pass.
- *          对反转给定范围的链表节点进行反转，只遍历一遍
- *
- *          Note: 1 ≤ m ≤ n ≤ length of list.
- *
- *          Example:
- *
- *          Input: 1->2->3->4->5->NULL, m = 2, n = 4
- *          Output: 1->4->3->2->5->NULL
- *
+ * 对反转给定范围的链表节点进行反转，只遍历一遍
+ * <p>
+ * Note: 1 ≤ m ≤ n ≤ length of list.
+ * <p>
+ * Example:
+ * <p>
+ * Input: 1->2->3->4->5->NULL, m = 2, n = 4
+ * Output: 1->4->3->2->5->NULL
  * @Version: 1.0
  */
 public class _92_reverseLinkedList2 {
@@ -52,20 +51,4 @@ public class _92_reverseLinkedList2 {
     }
 
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 }
